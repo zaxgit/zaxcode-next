@@ -1,0 +1,20 @@
+*,
+html {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.global.css.map */
