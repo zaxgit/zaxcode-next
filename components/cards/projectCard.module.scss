@@ -1,0 +1,28 @@
+.projectCardContainer {
+  display: inline-block;
+  .cardImage {
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    height: 200px;
+    width: 325px;
+
+    box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  .cardContent {
+    .cardTitle {
+      font-size: 1.5rem;
+    }
+    .tag {
+      display: inline;
+      color: #ff0000;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}

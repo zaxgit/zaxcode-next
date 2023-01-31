@@ -1,6 +1,3 @@
-// :root {
-//   //variables go here
-// }
 *,
 html {
   margin: 0px;
@@ -13,8 +10,11 @@ body {
   padding: 0;
   background-color: #fff;
 }
+
 ul,
 li {
   list-style: none;
   text-decoration: none;
 }
+
+/*# sourceMappingURL=main.css.map */
