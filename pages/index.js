@@ -5,6 +5,7 @@ import About from 'components/about/about';
 import ProjectsList from '@/components/projects/projectsList';
 import BlogList from '@/components/projects/blogList';
 import ButtonPrimary from '@/components/buttons/buttonPrimary';
+import Resume from '@/components/resume/resume';
 
 export default function Home({ projects, posts, aboutData }) {
   const [fetchedProjects, setFetchedProjects] = useState([]);
@@ -27,6 +28,7 @@ export default function Home({ projects, posts, aboutData }) {
       </Head>
       <Nav />
       <About author={fetchedAuthor} />
+      <Resume />
       <ProjectsList projects={fetchedProjects} hasButton={true} />
       <BlogList posts={fetchedPosts} hasButton={true} />
     </>

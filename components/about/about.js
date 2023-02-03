@@ -15,9 +15,9 @@ export default function About({ author }) {
           alt='Image of Zach'
         />
       </div>
-      <div>
+      <div className={styles.profileContent}>
         <ButtonPrimary>
-          View More
+          Download cv
           <HiOutlineDocumentDownload />
         </ButtonPrimary>
       </div>
