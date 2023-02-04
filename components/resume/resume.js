@@ -1,6 +1,8 @@
 import styles from './resume.module.scss';
 import Wrapper from '../layout/wrapper';
 import { IoSchoolOutline } from 'react-icons/io5';
+import { GiSkills } from 'react-icons/gi';
+import { MdWorkOutline } from 'react-icons/md';
 
 export default function Resume() {
   return (
@@ -9,7 +11,7 @@ export default function Resume() {
       <div className={styles.resumeContainer}>
         <div className={styles.leftCol}>
           <div className={styles.resumeSectionHeader}>
-            <IoSchoolOutline />
+            <GiSkills />
             <h4>Skills</h4>
           </div>
           <div className={styles.skillSection}>
@@ -54,7 +56,7 @@ export default function Resume() {
         </div>
         <div className={`${styles.rightCol} ${styles.top}`}>
           <div className={styles.resumeSectionHeader}>
-            <IoSchoolOutline />
+            <MdWorkOutline />
             <h4>Experience</h4>
           </div>
           <div className={styles.section}>

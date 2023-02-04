@@ -3,17 +3,19 @@
   border: none;
   background-color: #000;
   color: #fff;
+  cursor: pointer;
 
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 
-  float: right;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.7rem;
 
+  float: right;
   display: flex;
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
 
@@ -21,7 +23,7 @@
   transition: all 0.1s ease-in-out;
 
   svg {
-    font-size: 1.6rem;
+    font-size: 3rem;
   }
 
   &:hover {

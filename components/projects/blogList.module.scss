@@ -1,41 +1,6 @@
-.header {
-  color: #545353;
-}
 .listWrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-.postIcon {
-  text-align: left;
-  margin-bottom: 30px;
-  font-size: 2rem;
-}
-
-.postTitle {
-  margin-bottom: 1.2rem;
-  font-size: 1rem;
-  font-weight: 700;
-  min-height: 50px;
-  color: #545343;
-}
-
-.postLink {
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: #a39e9e;
-  span {
-    color: black;
-    position: relative;
-    svg {
-      margin: 0;
-      padding: 0;
-      font-size: 1.1rem;
-      position: absolute;
-      top: -1px;
-      left: 0;
-    }
-  }
 }

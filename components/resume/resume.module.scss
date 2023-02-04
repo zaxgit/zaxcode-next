@@ -1,5 +1,7 @@
+@import '../../styles/scss/abstracts/mixins';
+
 .resumeHeader {
-  padding-bottom: 50px;
+  padding-bottom: 5rem;
   color: #545353;
 }
 
@@ -7,22 +9,17 @@
   display: grid;
   grid-template-columns: 1.2fr 3.5fr;
   grid-template-rows: 2fr 2fr 2fr;
-  grid-gap: 33px;
+  grid-gap: 3.3rem;
   color: #545353;
 
   .leftCol {
-    padding: 30px;
+    @extend %gray-border;
     grid-column: 1/1;
     grid-row: 1 / 4;
-
-    border: 1px solid #d4d4d4;
-    border-radius: 27px;
   }
   .rightCol {
-    padding: 30px;
+    @extend %gray-border;
     grid-column: 2/3;
-    border: 1px solid #d4d4d4;
-    border-radius: 27px;
   }
 
   .top {
@@ -33,9 +30,9 @@
   }
 
   h4 {
-    font-size: 1.15rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 2.4rem;
   }
   .resumeSectionHeader {
     position: relative;
@@ -44,12 +41,12 @@
     svg {
       position: absolute;
       top: 0;
-      font-size: 2rem;
+      font-size: 3rem;
       color: #000;
     }
 
     h4 {
-      padding-left: 3rem;
+      padding-left: 4.5rem;
       display: inline-block;
     }
   }
@@ -63,8 +60,10 @@
     }
     .skills {
       padding-left: 0.75rem;
-      font-size: 1rem;
-      font-weight: 400;
+      .skill {
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
     }
   }
 
@@ -76,12 +75,13 @@
       span {
         padding-left: 1rem;
         font-weight: 400;
+        font-size: inherit;
       }
       padding-bottom: 0.5rem;
     }
     p {
       font-weight: 400;
-      font-size: 1rem;
+      font-size: 1.6rem;
       line-height: 21px;
     }
   }

@@ -1,7 +1,7 @@
 .navContainer {
   width: 100%;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,14 +12,15 @@
     justify-content: space-between;
     align-items: center;
 
-    h3,
     .navTitle {
       margin: 0;
       display: inline-block;
-      font-size: 1.5rem;
+      font-size: 2.3rem;
       font-weight: 800;
       color: #31353b;
+
       span {
+        font-size: inherit;
         color: #ff0000;
       }
     }
@@ -33,16 +34,21 @@
       li,
       .navItem {
         float: left;
-        font-size: 1.1rem;
+        font-size: 1.7rem;
         font-weight: 700;
         transition: all 0.2s ease-in-out;
+        cursor: pointer;
 
         &:hover {
           transform: scale(1.1);
         }
 
         &:not(:last-child) {
-          margin-right: 15px;
+          margin-right: 1.5rem;
+        }
+
+        &:active {
+          border-bottom: 1px solid black;
         }
       }
     }

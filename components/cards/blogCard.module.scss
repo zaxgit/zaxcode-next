@@ -1,0 +1,44 @@
+@import '../../styles/scss/abstracts/mixins';
+
+.blogCard {
+  @extend %gray-border;
+  position: relative;
+  padding-top: 8rem;
+  width: 24%;
+
+  .postIcon {
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+
+  .postTitle {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    min-height: 5rem;
+    color: #545343;
+    padding-bottom: 2.4rem;
+  }
+
+  .postLink {
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #a39e9e;
+    bottom: 30px;
+    cursor: pointer;
+    span {
+      color: black;
+      position: relative;
+      svg {
+        margin: 0;
+        padding: 0;
+        font-size: 1.8rem;
+        position: absolute;
+        top: -6px;
+        left: 0;
+      }
+    }
+  }
+}
