@@ -16,11 +16,11 @@ export default function About({ author }) {
           <h2 className={styles.name}>Zach</h2>
           <p>Front End Web Developer.</p>
           <p className={styles.about}>
-            I've been teaching myself to code for a couple years. I started this
-            journey on sites such as CodeCademy and Udemy. Most of my recent
-            learning has been through reading documentation and problem solving
-            for projects. Seeking to join a company where I can continue to
-            cultivate new skills and to help bring their online visions to
+            I&apos;ve been teaching myself to code for a couple years. I started
+            this journey on sites such as CodeCademy and Udemy. Most of my
+            recent learning has been through reading documentation and problem
+            solving for projects. Seeking to join a company where I can continue
+            to cultivate new skills and to help bring their online visions to
             fruition.
           </p>
           <div className={styles.infoCards}>
@@ -42,7 +42,7 @@ export default function About({ author }) {
           </div>
           <div className={styles.contentSecondary}>
             <p className={styles.synopsis}>
-              Web developer, specializing in front end. I've created with
+              Web developer, specializing in front end. I&apos;ve created with
               Javscript, React, WordPress and PHP. Familiar with both SQL and
               noSQL data structures.
             </p>
