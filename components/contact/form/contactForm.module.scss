@@ -3,6 +3,7 @@
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
+
   .inputContainer {
     input {
       position: relative;
@@ -16,6 +17,7 @@
       font-size: 2.1rem;
       font-weight: 500;
       color: #545353;
+      transition: all 0.3s ease-in-out;
 
       &::placeholder {
         position: absolute;
@@ -23,21 +25,52 @@
         transform: translateY(-50%);
         color: #968e8e;
         font-size: 2.1rem;
-        font-weight: 500;
+        transition: all 0.3s ease-out;
       }
 
-      &:last-child {
-        height: 15rem;
-
+      &:focus {
+        height: 7rem;
         &::placeholder {
-          top: 1rem;
-          transform: translateY(0);
+          transform: translateY(-100px);
+          color: transparent;
         }
       }
+    }
 
-      &:active {
-        border: 2px solid #cbcbcb;
-        color: #cbcbcb;
+    textarea {
+      &:last-child {
+        height: 6rem;
+        width: 100%;
+        resize: none;
+
+        position: relative;
+        display: block;
+        border: 1px solid #cbcbcb;
+        border-radius: 12px;
+        height: 6rem;
+        padding: 1rem;
+        margin-bottom: 5rem;
+        font-size: 2.1rem;
+        font-weight: 500;
+        color: #545353;
+        transition: all 0.3s ease-in-out;
+
+        &::placeholder {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          color: #968e8e;
+          font-size: 2.1rem;
+          transition: all 0.3s ease-out;
+        }
+
+        &:focus {
+          height: 15rem;
+          &::placeholder {
+            transform: translateY(-100px);
+            color: transparent;
+          }
+        }
       }
     }
   }

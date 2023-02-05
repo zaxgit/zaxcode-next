@@ -13,15 +13,16 @@ export default function About({ author }) {
           <Image src={author.profile_image} alt='Image of Zach' fill priority />
         </div>
         <div className={styles.aboutContent}>
-          <h2 className={styles.name}>Zach</h2>
-          <p>Front End Web Developer.</p>
           <p className={styles.about}>
-            I&apos;ve been teaching myself to code for a couple years. I started
-            this journey on sites such as CodeCademy and Udemy. Most of my
-            recent learning has been through reading documentation and problem
-            solving for projects. Seeking to join a company where I can continue
-            to cultivate new skills and to help bring their online visions to
-            fruition.
+            <span>As an enthusiastic self-taught programmer</span> with over two
+            years of experience, I have honed my skills through various
+            resources such as CodeCademy and Udemy. I have a passion for
+            continuously expanding my knowledge and have been consistently
+            reading technical documentation and solving challenging programming
+            problems through independent projects. I am now seeking a dynamic
+            and challenging company that can provide opportunities for
+            professional growth and where I can contribute to realizing the
+            company's online initiatives.
           </p>
           <div className={styles.infoCards}>
             <div className={styles.infoCard}>
@@ -40,21 +41,14 @@ export default function About({ author }) {
               <p>7+ languages</p>
             </div>
           </div>
-          <div className={styles.contentSecondary}>
-            <p className={styles.synopsis}>
-              Web developer, specializing in front end. I&apos;ve created with
-              Javscript, React, WordPress and PHP. Familiar with both SQL and
-              noSQL data structures.
-            </p>
-            <div className={styles.actions}>
-              <ButtonPrimary>
-                Download cv
-                <HiOutlineDocumentDownload />
-              </ButtonPrimary>
-              <button className={styles.scrollBtn}>
-                scroll down <HiArrowSmDown />
-              </button>
-            </div>
+          <div className={styles.actions}>
+            <ButtonPrimary>
+              Download cv
+              <HiOutlineDocumentDownload />
+            </ButtonPrimary>
+            <button className={styles.scrollBtn}>
+              scroll down <HiArrowSmDown />
+            </button>
           </div>
         </div>
       </div>

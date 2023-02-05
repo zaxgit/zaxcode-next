@@ -6,9 +6,9 @@ export default function contactForm() {
   return (
     <form className={styles.contactForm}>
       <div className={styles.inputContainer}>
-        <input type='text' placeHolder='name' />
-        <input type='email' placeHolder='email' />
-        <input type='text' placeholder='message'></input>
+        <input type='text' placeholder='name' />
+        <input type='email' placeholder='email' />
+        <textarea placeholder='message' />
       </div>
       <div className={styles.formActions}>
         <ButtonPrimary>
