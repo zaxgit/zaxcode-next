@@ -1,0 +1,20 @@
+.btnSecondary {
+  border: none;
+  background-color: transparent;
+  font-size: inherit;
+  font-weight: 500;
+  color: inherit;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  svg {
+    color: #000;
+    margin-left: 0.5rem;
+    font-size: inherit;
+  }
+}

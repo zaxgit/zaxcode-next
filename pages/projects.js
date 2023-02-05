@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 
 import Nav from '../components/layout/nav/nav';
 import ProjectsList from '@/components/projects/projectsList';
+import Footer from '@/components/layout/footer/footer';
 
 export default function Projects({ projects }) {
   const [fetchedProjects, setFetchedProjects] = useState([]);
@@ -15,6 +16,7 @@ export default function Projects({ projects }) {
     <>
       <Nav />
       <ProjectsList projects={fetchedProjects} />
+      <Footer />
     </>
   );
 }

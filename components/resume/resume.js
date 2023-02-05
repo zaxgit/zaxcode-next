@@ -7,7 +7,7 @@ import { MdWorkOutline } from 'react-icons/md';
 export default function Resume() {
   return (
     <Wrapper>
-      <h2 className={styles.resumeHeader}>resume</h2>
+      <h2>resume</h2>
       <div className={styles.resumeContainer}>
         <div className={styles.leftCol}>
           <div className={styles.resumeSectionHeader}>

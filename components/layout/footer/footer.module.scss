@@ -1,0 +1,51 @@
+.footer {
+  width: 100%;
+  height: 5rem;
+
+  .footerInner {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #545353;
+
+    p {
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+    ul {
+      li {
+        display: inline-block;
+
+        font-size: 1.6rem;
+        font-weight: 700;
+      }
+
+      circle {
+        display: inline-block;
+        background-color: black;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+      }
+    }
+
+    .footerLinks {
+      li {
+        &:not(:last-child) {
+          margin-right: 6rem;
+        }
+      }
+    }
+
+    .socials {
+      li {
+        &:not(:last-child) {
+          margin-right: 1.75rem;
+        }
+      }
+    }
+  }
+}

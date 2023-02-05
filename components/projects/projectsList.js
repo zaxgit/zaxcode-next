@@ -7,7 +7,7 @@ import { HiOutlineDocumentText } from 'react-icons/hi';
 export default function ProjectsList({ projects, hasButton }) {
   return (
     <Wrapper>
-      <h2 className={styles.projectHeader}>projects</h2>
+      <h2>projects</h2>
       <div className={styles.listWrapper}>
         {projects.map((project) => {
           return <ProjectCard key={project.uuid} project={project} />;

@@ -1,0 +1,56 @@
+@import '../../styles/scss/abstracts/mixins';
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  column-gap: 16rem;
+
+  .contactCol {
+    position: relative;
+  }
+  .contactCard {
+    width: 100%;
+    border: 0.9px solid #dddddd;
+    border-radius: 12px;
+
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    :not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    svg {
+      color: #000;
+      font-size: 3rem;
+      margin: 0 auto;
+    }
+
+    h4 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      color: #968e8e;
+      font-size: 1.15rem;
+      font-weight: 500;
+    }
+
+    .btn {
+      display: inline-block;
+      font-size: 1.15rem;
+      color: #545353;
+
+      svg {
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

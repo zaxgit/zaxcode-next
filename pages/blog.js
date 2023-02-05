@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Nav from '@/components/layout/nav/nav';
 import BlogList from '@/components/projects/blogList';
+import Footer from '@/components/layout/footer/footer';
 
 export default function Blog({ posts }) {
   const [fetchedPosts, setFetchedPosts] = useState([]);
@@ -12,9 +13,8 @@ export default function Blog({ posts }) {
   return (
     <>
       <Nav />
-      <div style={{ width: '80%', margin: 'auto' }}>
-        <BlogList posts={fetchedPosts} />
-      </div>
+      <BlogList posts={fetchedPosts} />
+      <Footer />
     </>
   );
 }
