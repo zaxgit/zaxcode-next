@@ -22,7 +22,7 @@ export default function About({ author }) {
             problems through independent projects. I am now seeking a dynamic
             and challenging company that can provide opportunities for
             professional growth and where I can contribute to realizing the
-            company's online initiatives.
+            company&apos;s online initiatives.
           </p>
           <div className={styles.infoCards}>
             <div className={styles.infoCard}>
