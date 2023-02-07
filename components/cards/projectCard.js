@@ -5,12 +5,7 @@ export default function ProjectCard({ project }) {
   return (
     <div className={styles.projectCardContainer}>
       <div className={styles.cardImage}>
-        <Image
-          src={project.feature_image}
-          height={200}
-          width={325}
-          alt='Image of project'
-        />
+        <Image src={project.feature_image} fill alt='Image of project' />
       </div>
 
       <div className={styles.cardContent}>

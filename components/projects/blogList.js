@@ -10,7 +10,11 @@ export default function BlogList({ posts, hasButton }) {
       <h2>blog</h2>
       <div className={styles.listWrapper}>
         {posts.map((post) => {
-          return <BlogCard key={post.uuid} title={post.title} />;
+          return (
+            <div className={styles.post}>
+              <BlogCard key={post.uuid} title={post.title} />
+            </div>
+          );
         })}
       </div>
       {hasButton && (

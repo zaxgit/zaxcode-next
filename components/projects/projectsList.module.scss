@@ -1,5 +1,10 @@
 .listWrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5rem;
+
+  // .project {
+  //   display: flex;
+  //   justify-content: center;
+  // }
 }

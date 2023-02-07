@@ -1,5 +1,11 @@
 .listWrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5rem;
+  margin-bottom: 5rem;
+
+  .post {
+    display: flex;
+    justify-content: center;
+  }
 }

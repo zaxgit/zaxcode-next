@@ -3,17 +3,17 @@
 .blogCard {
   @extend %gray-border;
   position: relative;
-  padding-top: 8rem;
-  width: 24%;
+  padding-top: 6rem;
+  width: 100%;
 
   .postIcon {
     text-align: left;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-size: 3rem;
   }
 
   .postTitle {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     font-size: 1.8rem;
     font-weight: 700;
     min-height: 5rem;
