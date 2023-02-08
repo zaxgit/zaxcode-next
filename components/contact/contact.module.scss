@@ -54,3 +54,47 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    row-gap: 5rem;
+
+    .contactCol {
+      &.rowTop {
+        display: grid;
+        grid-template-columns: repeat(3, 0.5fr);
+        column-gap: 1rem;
+
+        .contactCard {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5rem;
+
+    .contactCol {
+      &.rowTop {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 0.5fr);
+        row-gap: 1rem;
+
+        .contactCard {
+          margin: 0;
+        }
+      }
+
+      &.rowBottom {
+      }
+    }
+  }
+}

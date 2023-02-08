@@ -14,44 +14,46 @@ export default function Resume() {
             <GiSkills />
             <h4>Skills</h4>
           </div>
-          <div className={styles.skillSection}>
-            <h4 className={styles.skillSectionTitle}>Languages</h4>
-            <ul className={styles.skills}>
-              <li className={styles.skill}>HTML 5</li>
-              <li className={styles.skill}>CSS 3</li>
-              <li className={styles.skill}>SASS/SCSS</li>
-              <li className={styles.skill}>JavaScript</li>
-              <li className={styles.skill}>SQL</li>
-              <li className={styles.skill}>Node</li>
-              <li className={styles.skill}>PHP</li>
-            </ul>
-          </div>
-          <div className={styles.skillSection}>
-            <h4 className={styles.skillSectionTitle}>Frameworks</h4>
-            <ul className={styles.skills}>
-              <li className={styles.skill}>React</li>
-              <li className={styles.skill}>Next</li>
-              <li className={styles.skill}>Gatsby</li>
-            </ul>
-          </div>
-          <div className={styles.skillSection}>
-            <h4 className={styles.skillSectionTitle}>CMS</h4>
-            <ul className={styles.skills}>
-              <li className={styles.skill}>WordPress</li>
-              <li className={styles.skill}>GhostBlog</li>
-            </ul>
-          </div>
-          <div className={styles.skillSection}>
-            <h4 className={styles.skillSectionTitle}>Tools</h4>
-            <ul className={styles.skills}>
-              <li className={styles.skill}>Git</li>
-              <li className={styles.skill}>Adobe XD</li>
-              <li className={styles.skill}>Figma</li>
-              <li className={styles.skill}>Gatsby Cloud</li>
-              <li className={styles.skill}>Vercel</li>
-              <li className={styles.skill}>Firebase</li>
-              <li className={styles.skill}>Supabase</li>
-            </ul>
+          <div className={styles.skillSectionGrid}>
+            <div className={styles.skillSection}>
+              <h4 className={styles.skillSectionTitle}>Languages</h4>
+              <ul className={styles.skills}>
+                <li className={styles.skill}>HTML 5</li>
+                <li className={styles.skill}>CSS 3</li>
+                <li className={styles.skill}>SASS/SCSS</li>
+                <li className={styles.skill}>JavaScript</li>
+                <li className={styles.skill}>SQL</li>
+                <li className={styles.skill}>Node</li>
+                <li className={styles.skill}>PHP</li>
+              </ul>
+            </div>
+            <div className={styles.skillSection}>
+              <h4 className={styles.skillSectionTitle}>Frameworks</h4>
+              <ul className={styles.skills}>
+                <li className={styles.skill}>React</li>
+                <li className={styles.skill}>Next</li>
+                <li className={styles.skill}>Gatsby</li>
+              </ul>
+            </div>
+            <div className={styles.skillSection}>
+              <h4 className={styles.skillSectionTitle}>CMS</h4>
+              <ul className={styles.skills}>
+                <li className={styles.skill}>WordPress</li>
+                <li className={styles.skill}>GhostBlog</li>
+              </ul>
+            </div>
+            <div className={styles.skillSection}>
+              <h4 className={styles.skillSectionTitle}>Tools</h4>
+              <ul className={styles.skills}>
+                <li className={styles.skill}>Git</li>
+                <li className={styles.skill}>Adobe XD</li>
+                <li className={styles.skill}>Figma</li>
+                <li className={styles.skill}>Gatsby Cloud</li>
+                <li className={styles.skill}>Vercel</li>
+                <li className={styles.skill}>Firebase</li>
+                <li className={styles.skill}>Supabase</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className={`${styles.rightCol} ${styles.top}`}>

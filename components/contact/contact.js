@@ -14,7 +14,7 @@ export default function Contact() {
     <Wrapper>
       <h2>contact</h2>
       <div className={styles.contactGrid}>
-        <div className={styles.contactCol}>
+        <div className={`${styles.contactCol} ${styles.rowTop}`}>
           <div className={styles.contactCard}>
             <AiOutlineMail />
             <h4>Email</h4>
@@ -46,7 +46,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className={styles.contactCol}>
+        <div className={`${styles.contactCol} ${styles.rowBottom}`}>
           <ContactForm />
         </div>
       </div>

@@ -4,12 +4,14 @@ export default function Footer() {
   return (
     <div className={styles.footer}>
       <div className={styles.footerInner}>
-        <p>&copy; ZaxCode 2022 All Rights Reserved</p>
+        <p>&copy; ZaxCode 2023 All Rights Reserved</p>
 
         <ul className={styles.footerLinks}>
-          <li>Link</li>
-          <li>Link</li>
-          <li>Link</li>
+          <li>Home</li>
+          <li>Projects</li>
+          <li>Blog</li>
+          <li>Resume</li>
+          <li>Contact</li>
         </ul>
 
         <ul className={styles.socials}>
