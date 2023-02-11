@@ -4,10 +4,10 @@ import { IoSchoolOutline } from 'react-icons/io5';
 import { GiSkills } from 'react-icons/gi';
 import { MdWorkOutline } from 'react-icons/md';
 
-export default function Resume() {
+export default function Resume({ scrollRef }) {
   return (
     <Wrapper>
-      <h2>resume</h2>
+      <h2 ref={scrollRef}>resume</h2>
       <div className={styles.resumeContainer}>
         <div className={styles.leftCol}>
           <div className={styles.resumeSectionHeader}>

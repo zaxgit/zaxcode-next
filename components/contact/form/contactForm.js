@@ -7,7 +7,6 @@ import { FiSend } from 'react-icons/fi';
 export default function contactForm() {
   const [state, handleSubmit] = useForm('mpzeppbq');
 
-  console.log(state);
   if (state.succeeded) {
     return <p>Thanks for reaching out!</p>;
   }

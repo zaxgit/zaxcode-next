@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 import Nav from '@/components/layout/nav/nav';
 import About from 'components/about/about';
@@ -20,6 +20,12 @@ export default function Home({ projects, posts, aboutData }) {
     setFetchedAuthor(aboutData.authors[0]);
   }, [projects, posts, aboutData]);
 
+  const scrollRef = useRef(null);
+
+  const scrollToRef = () => {
+    scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
       <Head>
@@ -29,8 +35,8 @@ export default function Home({ projects, posts, aboutData }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Nav />
-      <About author={fetchedAuthor} />
-      <Resume />
+      <About author={fetchedAuthor} scrollToRef={scrollToRef} />
+      <Resume scrollRef={scrollRef} />
       <ProjectsList projects={fetchedProjects} hasButton={true} />
       <BlogList posts={fetchedPosts} hasButton={true} />
       <Contact />

@@ -5,7 +5,7 @@ import ButtonPrimary from '../buttons/buttonPrimary';
 import { HiOutlineDocumentDownload, HiArrowSmDown } from 'react-icons/hi';
 import { FaAward, FaCode, FaCheckDouble } from 'react-icons/fa';
 
-export default function About({ author }) {
+export default function About({ author, scrollToRef }) {
   return (
     <Wrapper>
       <div className={styles.aboutGrid}>
@@ -51,7 +51,7 @@ export default function About({ author }) {
               </a>
               <HiOutlineDocumentDownload />
             </ButtonPrimary>
-            <button className={styles.scrollBtn}>
+            <button className={styles.scrollBtn} onClick={scrollToRef}>
               scroll down <HiArrowSmDown />
             </button>
           </div>
