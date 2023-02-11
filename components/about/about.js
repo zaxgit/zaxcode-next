@@ -43,7 +43,12 @@ export default function About({ author }) {
           </div>
           <div className={styles.actions}>
             <ButtonPrimary>
-              Download cv
+              <a
+                href='./Portfolio_Resume.pdf'
+                download='Zach_Walter-Resume.pdf'
+              >
+                Download cv
+              </a>
               <HiOutlineDocumentDownload />
             </ButtonPrimary>
             <button className={styles.scrollBtn}>

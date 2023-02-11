@@ -17,11 +17,21 @@ export default function Nav() {
             <Hamburger />
           ) : (
             <ul className={styles.navList}>
-              <li className={styles.navItem}>Home</li>
-              <li className={styles.navItem}>Projects</li>
-              <li className={styles.navItem}>Blog</li>
-              <li className={styles.navItem}>Resume</li>
-              <li className={styles.navItem}>Contact</li>
+              <li className={styles.navItem}>
+                <Link href='/'>Home</Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link href='/projects'>Projects</Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link href='/blog'>Blog</Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link href='/resume'>Resume</Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link href='/contact'>Contact</Link>
+              </li>
             </ul>
           )}
         </nav>

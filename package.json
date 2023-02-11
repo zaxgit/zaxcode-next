@@ -10,6 +10,7 @@
     "compile": "sass --watch styles/scss/main.scss styles/main.css"
   },
   "dependencies": {
+    "@formspree/react": "^2.4.1",
     "@next/font": "13.1.5",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.5",

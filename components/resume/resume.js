@@ -69,10 +69,16 @@ export default function Resume() {
             </h4>
             <ul>
               <li>
+                <p>Write clean, readable and scalable code</p>
+              </li>
+              <li>
                 <p>
-                  Worked with clients to develop websites in WordPress, React,
-                  and Gatsby
+                  Translate designs into user friendly, responsive websites and
+                  applications
                 </p>
+              </li>
+              <li>
+                <p>Collaborate with other developers on joint projects</p>
               </li>
             </ul>
           </div>
