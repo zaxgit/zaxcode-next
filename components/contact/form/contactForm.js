@@ -4,7 +4,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import ButtonPrimary from '@/components/buttons/buttonPrimary';
 import { FiSend } from 'react-icons/fi';
 
-export default function contactForm() {
+export default function ContactForm() {
   const [state, handleSubmit] = useForm('mpzeppbq');
 
   if (state.succeeded) {
