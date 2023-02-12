@@ -35,8 +35,8 @@ export default function Contact() {
             <div className={styles.btn}>
               <a
                 href='//www.linkedin.com/in/zaxcode'
+                rel='noreferrer'
                 target='_blank'
-                rel='noopener noreferer'
               >
                 <ButtonSecondary>
                   with me <HiArrowSmRight />
@@ -51,8 +51,8 @@ export default function Contact() {
             <div className={styles.btn}>
               <a
                 href='//www.github.com/zaxgit'
+                rel='noreferrer'
                 target='_blank'
-                rel='noopener noreferer'
               >
                 <ButtonSecondary>
                   with me <HiArrowSmRight />
