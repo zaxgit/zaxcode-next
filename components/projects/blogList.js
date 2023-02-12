@@ -2,6 +2,7 @@ import styles from './blogList.module.scss';
 import Wrapper from '../layout/wrapper';
 import BlogCard from '../cards/blogCard';
 import ButtonPrimary from '../buttons/buttonPrimary';
+import Link from 'next/link';
 import { HiOutlineDocumentText } from 'react-icons/hi';
 
 export default function BlogList({ posts, hasButton }) {
@@ -10,14 +11,16 @@ export default function BlogList({ posts, hasButton }) {
       <h2>blog</h2>
       <div className={styles.listWrapper}>
         {posts.map((post) => {
-          return <BlogCard key={post.uuid} title={post.title} />;
+          return <BlogCard key={post.uuid} title={post.title} id={post.id} />;
         })}
       </div>
       {hasButton && (
-        <ButtonPrimary>
-          View More
-          <HiOutlineDocumentText />
-        </ButtonPrimary>
+        <Link href='/blog'>
+          <ButtonPrimary>
+            View More
+            <HiOutlineDocumentText />
+          </ButtonPrimary>
+        </Link>
       )}
     </Wrapper>
   );

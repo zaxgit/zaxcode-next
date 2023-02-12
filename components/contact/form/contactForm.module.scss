@@ -11,9 +11,9 @@
       width: 100%;
       border: 1px solid #cbcbcb;
       border-radius: 12px;
-      height: 6rem;
+      height: 5rem;
       padding: 1rem;
-      margin-bottom: 5rem;
+      margin-bottom: 4rem;
       font-size: 2.1rem;
       font-weight: 500;
       color: #545353;
@@ -29,7 +29,7 @@
       }
 
       &:focus {
-        height: 7rem;
+        height: 6rem;
         &::placeholder {
           transform: translateY(-100px);
           color: transparent;
@@ -47,7 +47,7 @@
         display: block;
         border: 1px solid #cbcbcb;
         border-radius: 12px;
-        height: 6rem;
+        height: 5rem;
         padding: 1rem;
         margin-bottom: 5rem;
         font-size: 2.1rem;
@@ -65,7 +65,7 @@
         }
 
         &:focus {
-          height: 15rem;
+          height: 13rem;
           &::placeholder {
             transform: translateY(-100px);
             color: transparent;

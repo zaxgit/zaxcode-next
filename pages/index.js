@@ -50,7 +50,7 @@ export async function getStaticProps() {
   const key = process.env.API_KEY;
 
   const projects = await fetch(
-    `${url}/ghost/api/content/posts/?key=${key}&filter=tag:Projects&order=published_at DESC&include=tags`
+    `${url}/ghost/api/content/posts/?key=${key}&filter=tag:Projects&order=published_at DESC&include=tags&limit=3`
   )
     .then((res) => {
       return res.json();

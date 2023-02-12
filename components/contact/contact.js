@@ -9,30 +9,39 @@ import {
 } from 'react-icons/ai';
 import { HiArrowSmRight } from 'react-icons/hi';
 import ButtonSecondary from '../buttons/buttonSecondary';
+import Link from 'next/link';
 export default function Contact() {
   return (
     <Wrapper>
       <h2>contact</h2>
       <div className={styles.contactGrid}>
         <div className={`${styles.contactCol} ${styles.rowTop}`}>
-          <div className={styles.contactCard}>
+          {/* <div className={styles.contactCard}>
             <AiOutlineMail />
             <h4>Email</h4>
             <p>zwalter@zaxcode.dev</p>
             <div className={styles.btn}>
+              <a href='mailto:zwalter@zaxcode.dev?subject=I would like to offer you a job!&body=You are Hired!'>
               <ButtonSecondary>
                 with me <HiArrowSmRight />
               </ButtonSecondary>
+              </a>
             </div>
-          </div>
+          </div> */}
           <div className={styles.contactCard}>
             <AiOutlineLinkedin />
             <h4>LinkedIn</h4>
             <p>www.linkedin.com/in/zaxcode</p>
             <div className={styles.btn}>
-              <ButtonSecondary>
-                with me <HiArrowSmRight />
-              </ButtonSecondary>
+              <a
+                href='//www.linkedin.com/in/zaxcode'
+                target='_blank'
+                rel='noopener noreferer'
+              >
+                <ButtonSecondary>
+                  with me <HiArrowSmRight />
+                </ButtonSecondary>
+              </a>
             </div>
           </div>
           <div className={styles.contactCard}>
@@ -40,9 +49,15 @@ export default function Contact() {
             <h4>GitHub</h4>
             <p>www.github.com/zaxgit</p>
             <div className={styles.btn}>
-              <ButtonSecondary>
-                with me <HiArrowSmRight />
-              </ButtonSecondary>
+              <a
+                href='//www.github.com/zaxgit'
+                target='_blank'
+                rel='noopener noreferer'
+              >
+                <ButtonSecondary>
+                  with me <HiArrowSmRight />
+                </ButtonSecondary>
+              </a>
             </div>
           </div>
         </div>

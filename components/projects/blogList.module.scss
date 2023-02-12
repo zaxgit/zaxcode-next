@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 5rem;
   margin-bottom: 5rem;
+  row-gap: 5rem;
 }
 
 @media (max-width: 992px) {
@@ -10,7 +11,14 @@
     column-gap: 5rem;
     row-gap: 5rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .listWrapper {
+    column-gap: 3rem;
+    row-gap: 3rem;
   }
 }
 
@@ -19,6 +27,6 @@
     // column-gap: 5rem;
     row-gap: 3rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
   }
 }

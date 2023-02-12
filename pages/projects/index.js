@@ -1,7 +1,7 @@
 // posts will be populated at build time by getStaticProps()
 import { useEffect, useState } from 'react';
 
-import Nav from '../components/layout/nav/nav';
+import Nav from '@/components/layout/nav/nav';
 import ProjectsList from '@/components/projects/projectsList';
 import Footer from '@/components/layout/footer/footer';
 

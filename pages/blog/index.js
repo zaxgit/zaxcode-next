@@ -26,7 +26,7 @@ export async function getStaticProps() {
   const key = process.env.API_KEY;
 
   const posts = await fetch(
-    `${url}/ghost/api/content/posts/?key=${key}&filter=tag:Development-Process&order=published_at DESC&limit=4`
+    `${url}/ghost/api/content/posts/?key=${key}&filter=tag:Development-Process&order=published_at DESC`
   )
     .then((res) => {
       return res.json();
