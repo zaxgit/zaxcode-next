@@ -1,11 +1,12 @@
 import styles from './footer.module.scss';
 import Link from 'next/link';
-// import {} from 'react-icons/';
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <div className={styles.footer}>
       <div className={styles.footerInner}>
-        <p>&copy; ZaxCode 2023 All Rights Reserved</p>
+        <p>&copy; ZaxCode {year} All Rights Reserved</p>
 
         <ul className={styles.footerLinks}>
           <li>

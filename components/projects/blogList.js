@@ -1,7 +1,7 @@
 import styles from './blogList.module.scss';
 import Wrapper from '../layout/wrapper';
 import BlogCard from '../cards/blogCard';
-import ButtonPrimary from '../buttons/buttonPrimary';
+import Button from '../buttons/button';
 import Link from 'next/link';
 import { HiOutlineDocumentText } from 'react-icons/hi';
 
@@ -16,10 +16,10 @@ export default function BlogList({ posts, hasButton }) {
       </div>
       {hasButton && (
         <Link href='/blog'>
-          <ButtonPrimary>
+          <Button className='primary'>
             View More
             <HiOutlineDocumentText />
-          </ButtonPrimary>
+          </Button>
         </Link>
       )}
     </Wrapper>

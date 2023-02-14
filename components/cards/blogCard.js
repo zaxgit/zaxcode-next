@@ -1,6 +1,6 @@
 import styles from './blogCard.module.scss';
 import { HiOutlineDocumentText, HiArrowSmRight } from 'react-icons/hi';
-import ButtonSecondary from '../buttons/buttonSecondary';
+import Button from '../buttons/button';
 import Link from 'next/link';
 
 export default function OutlinedCard({ title, id }) {
@@ -9,14 +9,12 @@ export default function OutlinedCard({ title, id }) {
       <HiOutlineDocumentText className={styles.postIcon} />
       <h4 className={styles.postTitle}>{title}</h4>
 
-      <div className={styles.postLink}>
-        <Link href={`/blog/${id}`}>
-          <ButtonSecondary>
-            read more
-            <HiArrowSmRight />
-          </ButtonSecondary>
-        </Link>
-      </div>
+      <Link href={`/blog/${id}`} className={styles.postLink}>
+        <Button className='secondary'>
+          read more
+          <HiArrowSmRight />
+        </Button>
+      </Link>
     </div>
   );
 }

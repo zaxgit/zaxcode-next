@@ -1,7 +1,7 @@
 import styles from './contactForm.module.scss';
 import { useForm, ValidationError } from '@formspree/react';
 
-import ButtonPrimary from '@/components/buttons/buttonPrimary';
+import Button from '@/components/buttons/button';
 import { FiSend } from 'react-icons/fi';
 
 export default function ContactForm() {
@@ -24,9 +24,9 @@ export default function ContactForm() {
         <ValidationError prefix='Email' field='email' errors={state.errors} />
       </div>
       <div className={styles.formActions}>
-        <ButtonPrimary type='submit'>
+        <Button type='submit' className='primary'>
           Send Message <FiSend />
-        </ButtonPrimary>
+        </Button>
       </div>
     </form>
   );

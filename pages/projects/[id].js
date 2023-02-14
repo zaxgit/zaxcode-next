@@ -3,7 +3,6 @@ import Footer from '@/components/layout/footer/footer';
 import Image from 'next/image';
 
 export default function ProjectPage({ post }) {
-  console.log(post);
   return (
     <>
       <Nav />
@@ -60,7 +59,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const id = params.id;
-  console.log(id);
 
   const url = process.env.API_URL;
   const key = process.env.API_KEY;

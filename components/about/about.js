@@ -1,7 +1,7 @@
 import styles from './about.module.scss';
 import Wrapper from '../layout/wrapper';
 import Image from 'next/image';
-import ButtonPrimary from '../buttons/buttonPrimary';
+import Button from '../buttons/button';
 import { HiOutlineDocumentDownload, HiArrowSmDown } from 'react-icons/hi';
 import { FaAward, FaCode, FaCheckDouble } from 'react-icons/fa';
 
@@ -42,18 +42,19 @@ export default function About({ author, scrollToRef }) {
             </div>
           </div>
           <div className={styles.actions}>
-            <ButtonPrimary>
-              <a
-                href='./Zachary_Walter-Resume.pdf'
-                download='Zachary_Walter-Resume.pdf'
-              >
+            <a
+              href='./Zachary_Walter-Resume.pdf'
+              download='Zachary_Walter-Resume.pdf'
+            >
+              <Button className='primary'>
                 Download cv
-              </a>
-              <HiOutlineDocumentDownload />
-            </ButtonPrimary>
-            <button className={styles.scrollBtn} onClick={scrollToRef}>
+                <HiOutlineDocumentDownload />
+              </Button>
+            </a>
+
+            <Button className='secondary' onClick={scrollToRef}>
               scroll down <HiArrowSmDown />
-            </button>
+            </Button>
           </div>
         </div>
       </div>

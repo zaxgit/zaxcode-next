@@ -1,7 +1,7 @@
 import styles from './projectsList.module.scss';
 import Wrapper from '../layout/wrapper';
 import ProjectCard from '../cards/projectCard';
-import ButtonPrimary from '../buttons/buttonPrimary';
+import Button from '../buttons/button';
 import Link from 'next/link';
 import { HiOutlineDocumentText } from 'react-icons/hi';
 
@@ -16,10 +16,10 @@ export default function ProjectsList({ projects, hasButton }) {
       </div>
       {hasButton && (
         <Link href='/projects'>
-          <ButtonPrimary>
+          <Button className='primary'>
             View More
             <HiOutlineDocumentText />
-          </ButtonPrimary>
+          </Button>
         </Link>
       )}
     </Wrapper>
