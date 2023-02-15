@@ -2,6 +2,7 @@ import styles from './nav.module.scss';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
 import Hamburger from './hamburger';
 import Link from 'next/link';
+import ThemeToggler from '@/components/themeToggler';
 
 export default function Nav() {
   const { isBreakpoint } = useMediaQuery(768);
@@ -31,6 +32,9 @@ export default function Nav() {
               </li>
               <li className={styles.navItem}>
                 <Link href='/contact'>Contact</Link>
+              </li>
+              <li>
+                <ThemeToggler />
               </li>
             </ul>
           )}

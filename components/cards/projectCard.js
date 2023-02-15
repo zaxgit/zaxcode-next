@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function ProjectCard({ project }) {
   return (
-    <Link href={`/projects/${project.id}`}>
+    <Link href={`/projects/${project.slug}`}>
       <div className={styles.projectCardContainer}>
         <div className={styles.cardImage}>
           <Image src={project.feature_image} fill alt='Image of project' />

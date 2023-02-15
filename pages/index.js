@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import { useEffect, useState, useRef } from 'react';
 
+import { api } from './api/_api';
+
 import Nav from '@/components/layout/nav/nav';
 import About from 'components/about/about';
 import ProjectsList from '@/components/projects/projectsList';
@@ -9,16 +11,16 @@ import Resume from '@/components/resume/resume';
 import Contact from '@/components/contact/contact';
 import Footer from '@/components/layout/footer/footer';
 
-export default function Home({ projects, posts, aboutData }) {
+export default function Home({ projects, posts, authorData }) {
   const [fetchedProjects, setFetchedProjects] = useState([]);
   const [fetchedPosts, setFetchedPosts] = useState([]);
   const [fetchedAuthor, setFetchedAuthor] = useState({});
 
   useEffect(() => {
-    setFetchedProjects(projects.posts);
-    setFetchedPosts(posts.posts);
-    setFetchedAuthor(aboutData.authors[0]);
-  }, [projects, posts, aboutData]);
+    setFetchedAuthor(authorData);
+    setFetchedProjects(projects);
+    setFetchedPosts(posts);
+  }, [projects, posts, authorData]);
 
   const scrollRef = useRef(null);
 
@@ -37,8 +39,12 @@ export default function Home({ projects, posts, aboutData }) {
       <Nav />
       <About author={fetchedAuthor} scrollToRef={scrollToRef} />
       <Resume scrollRef={scrollRef} />
-      <ProjectsList projects={fetchedProjects} hasButton={true} />
-      <BlogList posts={fetchedPosts} hasButton={true} />
+      <ProjectsList
+        title='projects'
+        projects={fetchedProjects}
+        hasButton={true}
+      />
+      <BlogList title='blog' posts={fetchedPosts} hasButton={true} />
       <Contact />
       <Footer />
     </>
@@ -46,43 +52,43 @@ export default function Home({ projects, posts, aboutData }) {
 }
 
 export async function getStaticProps() {
-  const url = process.env.API_URL;
-  const key = process.env.API_KEY;
-
-  const projects = await fetch(
-    `${url}/ghost/api/content/posts/?key=${key}&filter=tag:Projects&order=published_at DESC&include=tags&limit=3`
-  )
-    .then((res) => {
-      return res.json();
+  const authorData = await api.authors
+    .browse({
+      limit: 1,
     })
-    .then((data) => {
-      return data;
+    .then((authors) => {
+      return authors[0];
     });
 
-  const posts = await fetch(
-    `${url}/ghost/api/content/posts/?key=${key}&filter=tag:Development-Process&order=published_at DESC&limit=4`
-  )
-    .then((res) => {
-      return res.json();
+  const projects = await api.posts
+    .browse({
+      limit: 3,
+      filter: 'tag:Projects',
+      order: 'published_at DESC',
+      include: 'tags',
     })
-    .then((data) => {
-      return data;
+    .then((projects) => {
+      return projects;
     });
 
-  const aboutData = await fetch(`${url}/ghost/api/content/authors/?key=${key}`)
-    .then((res) => {
-      return res.json();
+  const posts = await api.posts
+    .browse({
+      limit: 4,
+      filter: 'tag:Development-Process',
+      order: 'published_at DESC',
+      include: 'tags',
     })
-    .then((data) => {
-      return data;
+    .then((posts) => {
+      return posts;
     });
+
   // By returning { props: { posts } }, the Blog component
   // will receive `posts` as a prop at build time
   return {
     props: {
+      authorData,
       projects,
       posts,
-      aboutData,
     },
   };
 }

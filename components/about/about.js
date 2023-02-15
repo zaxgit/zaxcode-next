@@ -13,6 +13,9 @@ export default function About({ author, scrollToRef }) {
           <Image src={author.profile_image} alt='Image of Zach' fill priority />
         </div>
         <div className={styles.aboutContent}>
+          <h1>
+            <span>Zach</span>Walter
+          </h1>
           <p className={styles.about}>
             <span>As an enthusiastic self-taught programmer</span> with over two
             years of experience, I have honed my skills through various

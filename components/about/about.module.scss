@@ -8,10 +8,10 @@
   .aboutImage {
     display: inline-block;
     position: relative;
-    border-radius: 100px;
+    border-radius: 25px;
     overflow: hidden;
     max-height: 484px;
-    max-width: 555px;
+    max-width: 508px;
 
     img {
       object-fit: cover;
@@ -20,6 +20,17 @@
   }
 
   .aboutContent {
+    h1 {
+      font-size: 3rem;
+      color: #31353b;
+      letter-spacing: 1.5px;
+      span {
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        color: #ff0000;
+      }
+    }
     .about {
       color: #000;
       font-size: 1.8rem;
@@ -38,8 +49,8 @@
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
-      padding-top: 3rem;
-      padding-bottom: 3rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
 
       .infoCard {
         border: 1px solid #d4d4d4;
@@ -68,7 +79,7 @@
     }
 
     .actions {
-      padding-top: 2rem;
+      // padding-top: 2rem;
       width: 30rem;
       display: flex;
       justify-content: space-between;

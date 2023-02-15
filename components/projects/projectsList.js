@@ -5,10 +5,16 @@ import Button from '../buttons/button';
 import Link from 'next/link';
 import { HiOutlineDocumentText } from 'react-icons/hi';
 
-export default function ProjectsList({ projects, hasButton }) {
+export default function ProjectsList({
+  title,
+  href,
+  mapReturnElement,
+  projects,
+  hasButton,
+}) {
   return (
     <Wrapper>
-      <h2>projects</h2>
+      <h2>{title}</h2>
       <div className={styles.listWrapper}>
         {projects.map((project) => {
           return <ProjectCard key={project.uuid} project={project} />;
