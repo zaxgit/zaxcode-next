@@ -1,0 +1,100 @@
+@import '../abstracts/variables';
+
+body {
+  .color-primary {
+    color: $color-primary;
+  }
+
+  .light {
+    background-color: $lt-background;
+
+    .background,
+    input {
+      background-color: $lt-background;
+      color: $lt-text;
+
+      &::placeholder {
+        color: $lt-text-alt;
+      }
+    }
+
+    textarea {
+      background-color: $lt-background;
+      color: $lt-text;
+
+      &::placeholder {
+        color: $lt-text-alt;
+      }
+    }
+    .text-dark {
+      color: $color-dark;
+    }
+    .text-color {
+      color: $lt-text;
+    }
+
+    .text-color-light {
+      color: $lt-text-alt;
+    }
+
+    .primary-button-colors {
+      background-color: $lt-button;
+      color: $lt-button-text;
+    }
+
+    .secondary-button-colors {
+      color: $lt-text;
+
+      svg {
+        fill: $color-dark;
+      }
+    }
+  }
+
+  .dark {
+    background-color: $dt-background;
+
+    .background,
+    input {
+      background-color: $dt-background;
+      color: $dt-text;
+
+      ::placeholder {
+        color: $dt-text-alt;
+      }
+    }
+
+    textarea {
+      background-color: $dt-background;
+      color: $dt-text;
+
+      ::placeholder {
+        color: $dt-text-alt;
+      }
+    }
+    .text-dark {
+      color: $color-light;
+    }
+
+    .text-color {
+      color: $dt-text;
+    }
+
+    .text-color-light {
+      color: $dt-text-alt;
+    }
+
+    .primary-button-colors {
+      background-color: $dt-button;
+      color: $dt-button-text;
+    }
+
+    .secondary-button-colors {
+      color: $dt-text;
+
+      svg {
+        fill: $color-light;
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@ export default function ProjectsList({
 }) {
   return (
     <Wrapper>
-      <h2>{title}</h2>
+      <h2 className='text-dark'>{title}</h2>
       <div className={styles.listWrapper}>
         {projects.map((project) => {
           return <ProjectCard key={project.uuid} project={project} />;
@@ -22,7 +22,7 @@ export default function ProjectsList({
       </div>
       {hasButton && (
         <Link href='/projects'>
-          <Button className='primary'>
+          <Button className='primary-button-colors' isPrimary={true}>
             View More
             <HiOutlineDocumentText />
           </Button>

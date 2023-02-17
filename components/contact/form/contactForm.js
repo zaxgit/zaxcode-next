@@ -14,7 +14,12 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className={styles.contactForm}>
       <div className={styles.inputContainer}>
-        <input type='text' id='name' placeholder='name' />
+        <input
+          type='text'
+          id='name'
+          placeholder='name'
+          className='text-color'
+        />
         <ValidationError prefix='Name' field='name' errors={state.errors} />
 
         <input id='email' type='email' name='email' placeholder='email' />
@@ -24,7 +29,11 @@ export default function ContactForm() {
         <ValidationError prefix='Email' field='email' errors={state.errors} />
       </div>
       <div className={styles.formActions}>
-        <Button type='submit' className='primary'>
+        <Button
+          type='submit'
+          className='primary-button-colors'
+          isPrimary={true}
+        >
           Send Message <FiSend />
         </Button>
       </div>

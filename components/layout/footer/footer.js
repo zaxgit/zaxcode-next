@@ -13,12 +13,6 @@ export default function Footer() {
             <Link href='/'>Home</Link>
           </li>
           <li>
-            <Link href='/projects'>Projects</Link>
-          </li>
-          <li>
-            <Link href='/blog'>Blog</Link>
-          </li>
-          <li>
             <Link href='/resume'>Resume</Link>
           </li>
           <li>
@@ -26,7 +20,7 @@ export default function Footer() {
           </li>
         </ul>
 
-        <ul className={styles.socials}>
+        {/* <ul className={styles.socials}>
           <li>
             <a>
               <circle id={styles.facebook}></circle>
@@ -47,7 +41,7 @@ export default function Footer() {
               <circle id={styles.facebook}></circle>
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   );

@@ -11,10 +11,12 @@
     @extend %gray-border;
     grid-column: 1;
     grid-row: 1 / 4;
+    padding: 3rem;
   }
   .rightCol {
     @extend %gray-border;
     grid-column: 2;
+    padding: 3rem;
   }
 
   .top {
@@ -37,7 +39,6 @@
       position: absolute;
       top: 0;
       font-size: 3rem;
-      color: #000;
     }
 
     h4 {

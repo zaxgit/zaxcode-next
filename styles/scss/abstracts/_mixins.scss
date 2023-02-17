@@ -1,5 +1,23 @@
+@import '../abstracts/variables';
+
 %gray-border {
-  border: 1px solid #d4d4d4;
+  border: 1px solid $color-border;
   border-radius: 27px;
-  padding: 3rem;
+}
+
+%nav-link {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  &:active:hover {
+    border-bottom: 1px solid black;
+  }
 }

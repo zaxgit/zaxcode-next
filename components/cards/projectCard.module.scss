@@ -1,6 +1,9 @@
+@import '../../styles/scss/abstracts/mixins';
 .projectCardContainer {
+  @extend %gray-border;
   display: inline-block;
   min-width: 100%;
+  padding: 2rem;
 
   .cardImage {
     position: relative;
@@ -22,17 +25,18 @@
     margin-top: 1rem;
     .projectCardTitle {
       font-size: 2rem;
-      color: #11142d;
     }
     .tag {
       display: inline;
-      color: #ff0000;
       font-size: 1.4rem;
       text-transform: uppercase;
 
       &:not(:last-child) {
         margin-right: 1rem;
       }
+    }
+    button {
+      margin-top: 2.4rem;
     }
   }
 }

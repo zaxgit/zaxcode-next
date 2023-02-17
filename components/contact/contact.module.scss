@@ -10,8 +10,8 @@
     position: relative;
   }
   .contactCard {
+    @extend %gray-border;
     width: 100%;
-    border: 0.9px solid #dddddd;
     border-radius: 12px;
 
     padding-top: 3rem;
@@ -23,30 +23,25 @@
       margin-bottom: 4rem;
     }
 
-    :not(:last-child) {
-      margin-bottom: 1rem;
-    }
-
     svg {
-      color: #000;
       font-size: 3rem;
       margin: 0 auto;
     }
 
     h4 {
       font-size: 1.6rem;
+      margin-bottom: 3rem;
     }
 
     p {
-      color: #968e8e;
       font-size: 1.15rem;
       font-weight: 500;
     }
 
     .btn {
       display: inline-block;
-      font-size: 1.15rem;
-      color: #545353;
+      font-size: 1.2rem;
+      font-weight: 500;
 
       svg {
         font-size: 1.2rem;

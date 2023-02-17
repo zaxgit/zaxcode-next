@@ -13,8 +13,6 @@
 .primary {
   font-weight: 700;
   font-size: 1.7rem;
-  background-color: #000;
-  color: #fff;
   float: right;
 
   padding-left: 20px;
@@ -25,7 +23,8 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
   transition: all 0.1s ease-in-out;
 
-  svg {
+  svg,
+  img {
     font-size: 2.5rem;
     margin-left: 1rem;
   }
@@ -43,12 +42,11 @@
 
 .secondary {
   background-color: transparent;
-  font-size: inherit;
+  font-size: 1.2rem;
   font-weight: 500;
-  color: inherit;
 
-  svg {
-    color: #000;
+  svg,
+  img {
     margin-left: 0.5rem;
     font-size: 1.5rem;
   }

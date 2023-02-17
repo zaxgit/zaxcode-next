@@ -7,14 +7,16 @@ import { MdWorkOutline } from 'react-icons/md';
 export default function Resume({ scrollRef }) {
   return (
     <Wrapper>
-      <h2 ref={scrollRef}>resume</h2>
+      <h2 className='text-dark' ref={scrollRef}>
+        resume
+      </h2>
       <div className={styles.resumeContainer}>
         <div className={styles.leftCol}>
-          <div className={styles.resumeSectionHeader}>
+          <div className={`${styles.resumeSectionHeader} text-dark`}>
             <GiSkills />
             <h4>Skills</h4>
           </div>
-          <div className={styles.skillSectionGrid}>
+          <div className={`${styles.skillSectionGrid} text-color`}>
             <div className={styles.skillSection}>
               <h4 className={styles.skillSectionTitle}>Languages</h4>
               <ul className={styles.skills}>
@@ -57,11 +59,11 @@ export default function Resume({ scrollRef }) {
           </div>
         </div>
         <div className={`${styles.rightCol} ${styles.top}`}>
-          <div className={styles.resumeSectionHeader}>
+          <div className={`${styles.resumeSectionHeader} text-dark`}>
             <MdWorkOutline />
             <h4>Experience</h4>
           </div>
-          <div className={styles.section}>
+          <div className={`${styles.section} text-color`}>
             <h4>
               ZaxCode
               <span>Self Employed</span>
@@ -82,7 +84,7 @@ export default function Resume({ scrollRef }) {
               </li>
             </ul>
           </div>
-          <div className={styles.section}>
+          <div className={`${styles.section} text-color`}>
             <h4>
               STL Vapor
               <span>Sales Representative</span>
@@ -109,7 +111,7 @@ export default function Resume({ scrollRef }) {
               </li>
             </ul>
           </div>
-          <div className={styles.section}>
+          <div className={`${styles.section} text-color`}>
             <h4>
               Point Roofing and Restoration
               <span>Sales Representative</span>
@@ -141,11 +143,11 @@ export default function Resume({ scrollRef }) {
           </div>
         </div>
         <div className={`${styles.rightCol} ${styles.bottom}`}>
-          <div className={styles.resumeSectionHeader}>
+          <div className={`${styles.resumeSectionHeader} text-dark`}>
             <IoSchoolOutline />
             <h4>Education</h4>
           </div>
-          <div className={styles.section}>
+          <div className={`${styles.section} text-color`}>
             <h4>
               Vatterott
               <span>

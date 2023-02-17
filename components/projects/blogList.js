@@ -8,7 +8,7 @@ import { HiOutlineDocumentText } from 'react-icons/hi';
 export default function BlogList({ title, posts, hasButton }) {
   return (
     <Wrapper>
-      <h2>{title}</h2>
+      <h2 className='text-dark'>{title}</h2>
       <div className={styles.listWrapper}>
         {posts.map((post) => {
           return <BlogCard key={post.uuid} post={post} />;
@@ -16,7 +16,7 @@ export default function BlogList({ title, posts, hasButton }) {
       </div>
       {hasButton && (
         <Link href='/blog'>
-          <Button className='primary'>
+          <Button className='primary-button-colors' isPrimary={true}>
             View More
             <HiOutlineDocumentText />
           </Button>

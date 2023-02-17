@@ -2,6 +2,7 @@ import styles from './hamburger.module.scss';
 import { useState } from 'react';
 import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import ThemeToggler from '@/components/layout/nav/themeToggler/themeToggle';
 
 export default function Hamburger() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +35,9 @@ export default function Hamburger() {
         </li>
         <li>
           <Link href='/contact'>Contact</Link>
+        </li>
+        <li>
+          <ThemeToggler />
         </li>
       </ul>
     </>

@@ -1,13 +1,15 @@
+@import '../../../styles/scss/abstracts/mixins';
+
 .navContainer {
   width: 100%;
   height: 8rem;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 15rem;
 
   .navInner {
     width: 85%;
+    height: 5rem;
     margin: 0 auto;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,46 +21,28 @@
       display: inline-block;
       font-size: 2.3rem;
       font-weight: 800;
-      color: #31353b;
 
       span {
         font-size: inherit;
-        color: #ff0000;
       }
     }
 
     .nav {
       position: relative;
       display: inline-block;
+      display: flex;
+      align-items: center;
 
       ul {
         list-style: none;
         text-decoration: none;
-
-        li {
-          font-size: 1.7rem;
-          font-weight: 700;
-          cursor: pointer;
-
-          transition: all 0.2s ease-in-out;
-
-          &:hover {
-            transform: scale(1.1);
-          }
-
-          &:not(:last-child) {
-            margin-right: 1.5rem;
-          }
-
-          &:active:hover {
-            border-bottom: 1px solid black;
-          }
-        }
-      }
-      .navList {
         display: inline-block;
 
-        .navItem {
+        li {
+          @extend %nav-link;
+          font-size: 1.7rem;
+          font-weight: 700;
+
           float: left;
         }
       }

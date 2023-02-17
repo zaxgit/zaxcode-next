@@ -5,55 +5,196 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-
-body {
+* body,
+html body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
 }
-
-ul,
-li {
+* body ul,
+* body li,
+html body ul,
+html body li {
   list-style: none;
   text-decoration: none;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+* body h1,
+* body h2,
+* body h3,
+* body h4,
+* body h5,
+* body h6,
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6 {
   margin: 0;
   padding: 0;
-  color: #545353;
   font-size: inherit;
   font-weight: 700;
 }
-
-h2 {
+* body h2,
+html body h2 {
   font-size: 2.4rem;
   margin-bottom: 5rem;
 }
-
-h4 {
+* body h4,
+html body h4 {
   font-size: 1.8rem;
   font-weight: 700;
 }
-h4 span {
+* body h4 span,
+html body h4 span {
   font-size: inherit;
 }
-
-h5 {
+* body h5,
+html body h5 {
   font-weight: 500;
   line-height: 1.7rem;
 }
-
-a {
+* body a,
+html body a {
   color: inherit;
   text-decoration: none;
   font-size: inherit;
   font-weight: inherit;
+}
+
+.projectWrapper .content, .projectWrapper .hero .titleContainer {
+  border: 1px solid #d4d4d4;
+  border-radius: 27px;
+}
+
+.projectWrapper .hero {
+  display: block;
+  position: relative;
+  width: 85%;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0;
+}
+.projectWrapper .hero .imgWrapper {
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 850px;
+  max-height: 420px;
+  width: 65%;
+  height: 100%;
+  margin-left: 1rem;
+  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.1);
+}
+.projectWrapper .hero .imgWrapper img {
+  object-fit: cover;
+  object-position: top;
+}
+.projectWrapper .hero .titleContainer {
+  display: inline-block;
+  position: absolute;
+  padding: 6rem;
+  height: 33rem;
+  width: 43rem;
+  z-index: 100;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
+}
+.projectWrapper .hero .titleContainer h1 {
+  font-size: 3.8rem;
+  line-height: 5rem;
+}
+.projectWrapper .content {
+  padding: 3rem;
+  width: 80%;
+  margin: 5rem auto;
+  min-height: 20rem;
+}
+.projectWrapper .content p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+body .color-primary {
+  color: #ff5656;
+}
+body .light {
+  background-color: #ffffff;
+}
+body .light .background,
+body .light input {
+  background-color: #ffffff;
+  color: #545353;
+}
+body .light .background::placeholder,
+body .light input::placeholder {
+  color: #d4d4d4;
+}
+body .light textarea {
+  background-color: #ffffff;
+  color: #545353;
+}
+body .light textarea::placeholder {
+  color: #d4d4d4;
+}
+body .light .text-dark {
+  color: #31353b;
+}
+body .light .text-color {
+  color: #545353;
+}
+body .light .text-color-light {
+  color: #d4d4d4;
+}
+body .light .primary-button-colors {
+  background-color: #000000;
+  color: #f1f1f1;
+}
+body .light .secondary-button-colors {
+  color: #545353;
+}
+body .light .secondary-button-colors svg {
+  fill: #31353b;
+}
+body .dark {
+  background-color: #1e1e1e;
+}
+body .dark .background,
+body .dark input {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+body .dark .background ::placeholder,
+body .dark input ::placeholder {
+  color: #545353;
+}
+body .dark textarea {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+body .dark textarea ::placeholder {
+  color: #545353;
+}
+body .dark .text-dark {
+  color: #f1f1f1;
+}
+body .dark .text-color {
+  color: #d4d4d4;
+}
+body .dark .text-color-light {
+  color: #545353;
+}
+body .dark .primary-button-colors {
+  background-color: #f1f1f1;
+  color: #000000;
+}
+body .dark .secondary-button-colors {
+  color: #d4d4d4;
+}
+body .dark .secondary-button-colors svg {
+  fill: #f1f1f1;
 }
 
 /*# sourceMappingURL=main.css.map */

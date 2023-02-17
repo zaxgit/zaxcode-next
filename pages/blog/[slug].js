@@ -2,16 +2,33 @@ import { api } from '../api/_api';
 
 import Nav from '@/components/layout/nav/nav';
 import Footer from '@/components/layout/footer/footer';
-import Wrapper from '@/components/layout/wrapper';
 
-export default function BlogPostPage({ post }) {
+import Image from 'next/image';
+import { IconPost } from '@/components/icons/icons';
+
+export default function PostPage({ post }) {
   return (
     <>
       <Nav />
-      <Wrapper>
-        <h1>{post.title}</h1>
-        <p>{post.plaintext}</p>
-      </Wrapper>
+      <div className='projectWrapper'>
+        <div className='hero'>
+          <div className='imgWrapper'>
+            {/* <Image
+              src={post.feature_image}
+              fill
+              sizes={['802', '401', '200']}
+              alt='project image'
+            /> */}
+          </div>
+          <div className='titleContainer background'>
+            <IconPost className='text-dark' height='5.8rem' width='7.5rem' />
+            <h1>{post.title}</h1>
+          </div>
+        </div>
+        <div className='content'>
+          <p className='text-color'>{post.plaintext}</p>
+        </div>
+      </div>
 
       <Footer />
     </>
