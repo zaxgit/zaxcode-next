@@ -66,6 +66,9 @@ html body a {
   border-radius: 27px;
 }
 
+.projectWrapper {
+  max-width: 1400px;
+}
 .projectWrapper .hero {
   display: block;
   position: relative;

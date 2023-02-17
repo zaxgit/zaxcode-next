@@ -1,6 +1,8 @@
 @import '../abstracts/mixins';
 
 .projectWrapper {
+  max-width: 1400px;
+
   .hero {
     display: block;
     position: relative;
