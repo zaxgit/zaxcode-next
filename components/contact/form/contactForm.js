@@ -17,15 +17,28 @@ export default function ContactForm() {
         <input
           type='text'
           id='name'
+          name='name'
           placeholder='name'
-          className='text-color'
+          className='input'
         />
         <ValidationError prefix='Name' field='name' errors={state.errors} />
 
-        <input id='email' type='email' name='email' placeholder='email' />
+        <input
+          id='email'
+          type='email'
+          name='email'
+          placeholder='email'
+          className='input'
+        />
         <ValidationError prefix='Email' field='email' errors={state.errors} />
 
-        <textarea id='message' name='message' placeholder='message' />
+        <textarea
+          type='textarea'
+          id='message'
+          name='message'
+          placeholder='message'
+          className='textarea'
+        />
         <ValidationError prefix='Email' field='email' errors={state.errors} />
       </div>
       <div className={styles.formActions}>

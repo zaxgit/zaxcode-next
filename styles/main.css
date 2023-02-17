@@ -120,80 +120,82 @@ html body a {
 body .color-primary {
   color: #ff5656;
 }
-body .light {
+body.light {
   background-color: #ffffff;
 }
-body .light .background,
-body .light input {
+body.light .background {
   background-color: #ffffff;
-  color: #545353;
 }
-body .light .background::placeholder,
-body .light input::placeholder {
-  color: #d4d4d4;
-}
-body .light textarea {
+body.light input.input {
   background-color: #ffffff;
   color: #545353;
 }
-body .light textarea::placeholder {
+body.light input.input::placeholder {
   color: #d4d4d4;
 }
-body .light .text-dark {
+body.light textarea.textarea {
+  background-color: #ffffff;
+  color: #545353;
+}
+body.light textarea.textarea::placeholder {
+  color: #d4d4d4;
+}
+body.light .text-dark {
   color: #31353b;
 }
-body .light .text-color {
+body.light .text-color {
   color: #545353;
 }
-body .light .text-color-light {
+body.light .text-color-light {
   color: #d4d4d4;
 }
-body .light .primary-button-colors {
+body.light .primary-button-colors {
   background-color: #000000;
   color: #f1f1f1;
 }
-body .light .secondary-button-colors {
+body.light .secondary-button-colors {
   color: #545353;
 }
-body .light .secondary-button-colors svg {
+body.light .secondary-button-colors svg {
   fill: #31353b;
 }
-body .dark {
+body.dark {
   background-color: #1e1e1e;
 }
-body .dark .background,
-body .dark input {
+body.dark .background {
   background-color: #1e1e1e;
-  color: #d4d4d4;
 }
-body .dark .background ::placeholder,
-body .dark input ::placeholder {
-  color: #545353;
-}
-body .dark textarea {
+body.dark input.input {
   background-color: #1e1e1e;
   color: #d4d4d4;
 }
-body .dark textarea ::placeholder {
+body.dark input.input ::placeholder {
   color: #545353;
 }
-body .dark .text-dark {
+body.dark textarea.textarea {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+body.dark textarea.textarea ::placeholder {
+  color: #545353;
+}
+body.dark .text-dark {
   color: #f1f1f1;
 }
-body .dark .text-color {
+body.dark .text-color {
   color: #d4d4d4;
 }
-body .dark .text-color-light {
+body.dark .text-color-light {
   color: #545353;
 }
-body .dark .primary-button-colors {
+body.dark .primary-button-colors {
   background-color: #f1f1f1;
   color: #000000;
 }
-body .dark .secondary-button-colors {
+body.dark .secondary-button-colors {
   color: #d4d4d4;
 }
-body .dark .secondary-button-colors svg {
+body.dark .secondary-button-colors svg {
   fill: #f1f1f1;
 }
 

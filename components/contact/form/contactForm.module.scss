@@ -37,36 +37,34 @@
     }
 
     textarea {
-      &:last-child {
-        height: 6rem;
-        width: 100%;
-        resize: none;
+      height: 6rem;
+      width: 100%;
+      resize: none;
 
-        position: relative;
-        display: block;
-        border: 1px solid #cbcbcb;
-        border-radius: 12px;
-        height: 5rem;
-        padding: 1rem;
-        margin-bottom: 5rem;
+      position: relative;
+      display: block;
+      border: 1px solid #cbcbcb;
+      border-radius: 12px;
+      height: 5rem;
+      padding: 1rem;
+      margin-bottom: 5rem;
+      font-size: 2.1rem;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+
+      &::placeholder {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         font-size: 2.1rem;
-        font-weight: 500;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-out;
+      }
 
+      &:focus {
+        height: 13rem;
         &::placeholder {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          font-size: 2.1rem;
-          transition: all 0.3s ease-out;
-        }
-
-        &:focus {
-          height: 13rem;
-          &::placeholder {
-            transform: translateY(-100px);
-            color: transparent;
-          }
+          transform: translateY(-100px);
+          color: transparent;
         }
       }
     }

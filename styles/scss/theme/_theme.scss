@@ -4,26 +4,32 @@ body {
   .color-primary {
     color: $color-primary;
   }
-
-  .light {
+  &.light {
     background-color: $lt-background;
 
-    .background,
-    input {
+    .background {
       background-color: $lt-background;
-      color: $lt-text;
+    }
 
-      &::placeholder {
-        color: $lt-text-alt;
+    input {
+      &.input {
+        background-color: $lt-background;
+        color: $lt-text;
+
+        &::placeholder {
+          color: $lt-text-alt;
+        }
       }
     }
 
     textarea {
-      background-color: $lt-background;
-      color: $lt-text;
+      &.textarea {
+        background-color: $lt-background;
+        color: $lt-text;
 
-      &::placeholder {
-        color: $lt-text-alt;
+        &::placeholder {
+          color: $lt-text-alt;
+        }
       }
     }
     .text-dark {
@@ -51,25 +57,31 @@ body {
     }
   }
 
-  .dark {
+  &.dark {
     background-color: $dt-background;
 
-    .background,
-    input {
+    .background {
       background-color: $dt-background;
-      color: $dt-text;
-
-      ::placeholder {
-        color: $dt-text-alt;
-      }
     }
 
-    textarea {
-      background-color: $dt-background;
-      color: $dt-text;
+    input {
+      &.input {
+        background-color: $dt-background;
+        color: $dt-text;
 
-      ::placeholder {
-        color: $dt-text-alt;
+        ::placeholder {
+          color: $dt-text-alt;
+        }
+      }
+    }
+    textarea {
+      &.textarea {
+        background-color: $dt-background;
+        color: $dt-text;
+
+        ::placeholder {
+          color: $dt-text-alt;
+        }
       }
     }
     .text-dark {
