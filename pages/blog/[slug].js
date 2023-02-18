@@ -13,16 +13,16 @@ export default function PostPage({ post }) {
       <div className='projectWrapper'>
         <div className='hero'>
           <div className='imgWrapper'>
-            {/* <Image
+            <Image
               src={post.feature_image}
               fill
               sizes={['802', '401', '200']}
               alt='project image'
-            /> */}
+            />
           </div>
           <div className='titleContainer background'>
             <IconPost className='text-dark' height='5.8rem' width='7.5rem' />
-            <h1>{post.title}</h1>
+            <h1 className='text-color'>{post.title}</h1>
           </div>
         </div>
         <div className='content'>

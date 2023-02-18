@@ -2,7 +2,10 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
-    domains: ['digitalpress.fra1.cdn.digitaloceanspaces.com'],
+    domains: [
+      'digitalpress.fra1.cdn.digitaloceanspaces.com',
+      'images.unsplash.com',
+    ],
   },
 };
 
