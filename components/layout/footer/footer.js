@@ -19,29 +19,6 @@ export default function Footer() {
             <Link href='/contact'>Contact</Link>
           </li>
         </ul>
-
-        {/* <ul className={styles.socials}>
-          <li>
-            <a>
-              <circle id={styles.facebook}></circle>
-            </a>
-          </li>
-          <li>
-            <a>
-              <circle id={styles.facebook}></circle>
-            </a>
-          </li>
-          <li>
-            <a>
-              <circle id={styles.facebook}></circle>
-            </a>
-          </li>
-          <li>
-            <a>
-              <circle id={styles.facebook}></circle>
-            </a>
-          </li>
-        </ul> */}
       </div>
     </div>
   );

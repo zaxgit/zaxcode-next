@@ -15,12 +15,20 @@ export default function Hamburger() {
   return (
     <>
       {isOpen ? (
-        <AiOutlineClose className={styles.icon} onClick={toggleOpen} />
+        <AiOutlineClose
+          className={`${styles.icon} text-dark`}
+          onClick={toggleOpen}
+        />
       ) : (
-        <AiOutlineMenu className={styles.icon} onClick={toggleOpen} />
+        <AiOutlineMenu
+          className={`${styles.icon} text-dark`}
+          onClick={toggleOpen}
+        />
       )}
 
-      <ul className={`${styles.menu} ${styles[isMenuOpen]}`}>
+      <ul
+        className={`${styles.menu} ${styles[isMenuOpen]} text-dark background`}
+      >
         <li>
           <Link href='/'>Home</Link>
         </li>

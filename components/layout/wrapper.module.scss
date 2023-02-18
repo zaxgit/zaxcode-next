@@ -1,9 +1,8 @@
 .wrapper {
   width: 80%;
-  max-width: 1200px;
   margin: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
   &::after {
     content: '';
