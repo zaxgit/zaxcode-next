@@ -13,12 +13,14 @@ export default function PostPage({ post }) {
       <div className='projectWrapper'>
         <div className='hero'>
           <div className='imgWrapper'>
-            <Image
-              src={post.feature_image}
-              fill
-              sizes={['802', '401', '200']}
-              alt='project image'
-            />
+            {post.feature_image && (
+              <Image
+                src={post.feature_image}
+                fill
+                sizes={['802', '401', '200']}
+                alt='project image'
+              />
+            )}
           </div>
           <div className='titleContainer background'>
             <IconPost className='text-dark' height='5.8rem' width='7.5rem' />
@@ -74,6 +76,7 @@ export async function getStaticProps({ params }) {
     formats: 'plaintext',
   });
 
+  console.log(post);
   return {
     props: {
       post,
