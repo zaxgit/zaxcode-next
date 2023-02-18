@@ -6,39 +6,42 @@ import BlogList from '@/components/projects/blogList';
 
 import Image from 'next/image';
 import { IconCode } from '@/components/icons/icons';
+import PageContentWrapper from '@/components/layout/pageContentWrapper/pageContentWrapper';
 
 export default function ProjectPage({ post, relatedPosts }) {
   return (
     <>
       <Nav />
-      <div className='projectWrapper'>
-        <div className='hero'>
-          <div className='imgWrapper'>
-            {post.feature_image && (
-              <Image
-                src={post.feature_image}
-                fill
-                sizes={['802', '401', '200']}
-                alt='project image'
-              />
-            )}
+      <PageContentWrapper>
+        <div className='projectWrapper'>
+          <div className='hero'>
+            <div className='imgWrapper'>
+              {post.feature_image && (
+                <Image
+                  src={post.feature_image}
+                  fill
+                  sizes={['802', '401', '200']}
+                  alt='project image'
+                />
+              )}
+            </div>
+            <div className='titleContainer background'>
+              <IconCode className='text-dark' height='5.8rem' width='7.5rem' />
+              <h1 className='text-color'>{post.title}</h1>
+            </div>
           </div>
-          <div className='titleContainer background'>
-            <IconCode className='text-dark' height='5.8rem' width='7.5rem' />
-            <h1 className='text-color'>{post.title}</h1>
+          <div className='content'>
+            <p className='text-color'>{post.plaintext}</p>
           </div>
+          {relatedPosts && (
+            <BlogList
+              title='related posts'
+              hasButton={true}
+              posts={relatedPosts}
+            />
+          )}
         </div>
-        <div className='content'>
-          <p className='text-color'>{post.plaintext}</p>
-        </div>
-        {relatedPosts && (
-          <BlogList
-            title='related posts'
-            hasButton={true}
-            posts={relatedPosts}
-          />
-        )}
-      </div>
+      </PageContentWrapper>
 
       <Footer />
     </>

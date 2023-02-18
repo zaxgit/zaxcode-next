@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useEffect, useState, useRef } from 'react';
+import { useRef } from 'react';
 
 import { api } from './api/_api';
 
@@ -10,18 +10,9 @@ import BlogList from '@/components/projects/blogList';
 import Resume from '@/components/resume/resume';
 import Contact from '@/components/contact/contact';
 import Footer from '@/components/layout/footer/footer';
+import PageContentWrapper from '@/components/layout/pageContentWrapper/pageContentWrapper';
 
 export default function Home({ projects, posts, authorData }) {
-  const [fetchedProjects, setFetchedProjects] = useState([]);
-  const [fetchedPosts, setFetchedPosts] = useState([]);
-  const [fetchedAuthor, setFetchedAuthor] = useState({});
-
-  useEffect(() => {
-    setFetchedAuthor(authorData);
-    setFetchedProjects(projects);
-    setFetchedPosts(posts);
-  }, [projects, posts, authorData]);
-
   const scrollRef = useRef(null);
 
   const scrollToRef = () => {
@@ -37,15 +28,13 @@ export default function Home({ projects, posts, authorData }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Nav />
-      <About author={fetchedAuthor} scrollToRef={scrollToRef} />
-      <Resume scrollRef={scrollRef} />
-      <ProjectsList
-        title='projects'
-        projects={fetchedProjects}
-        hasButton={true}
-      />
-      <BlogList title='blog' posts={fetchedPosts} hasButton={true} />
-      <Contact />
+      <PageContentWrapper>
+        <About author={authorData} scrollToRef={scrollToRef} />
+        <Resume scrollRef={scrollRef} />
+        <ProjectsList title='projects' projects={projects} hasButton={true} />
+        <BlogList title='blog' posts={posts} hasButton={true} />
+        <Contact />
+      </PageContentWrapper>
       <Footer />
     </>
   );

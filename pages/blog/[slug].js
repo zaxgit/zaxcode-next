@@ -5,12 +5,13 @@ import Footer from '@/components/layout/footer/footer';
 
 import Image from 'next/image';
 import { IconPost } from '@/components/icons/icons';
+import PageContentWrapper from '@/components/layout/pageContentWrapper/pageContentWrapper';
 
 export default function PostPage({ post }) {
   return (
     <>
       <Nav />
-      <div className='projectWrapper'>
+      <PageContentWrapper>
         <div className='hero'>
           <div className='imgWrapper'>
             {post.feature_image && (
@@ -30,8 +31,7 @@ export default function PostPage({ post }) {
         <div className='content'>
           <p className='text-color'>{post.plaintext}</p>
         </div>
-      </div>
-
+      </PageContentWrapper>
       <Footer />
     </>
   );

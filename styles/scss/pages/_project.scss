@@ -1,64 +1,60 @@
 @import '../abstracts/mixins';
 
-.projectWrapper {
-  max-width: 1400px;
+.hero {
+  display: block;
+  position: relative;
+  width: 85%;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0;
 
-  .hero {
-    display: block;
+  .imgWrapper {
     position: relative;
-    width: 85%;
-    height: 400px;
-    margin: 0 auto;
-    padding: 0;
+    display: inline-block;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 850px;
+    max-height: 420px;
+    width: 65%;
+    height: 100%;
+    margin-left: 1rem;
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.1);
 
-    .imgWrapper {
-      position: relative;
-      display: inline-block;
-      border-radius: 8px;
-      overflow: hidden;
-      max-width: 850px;
-      max-height: 420px;
-      width: 65%;
-      height: 100%;
-      margin-left: 1rem;
-      box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.1);
-
-      img {
-        object-fit: cover;
-        object-position: top;
-      }
-    }
-
-    .titleContainer {
-      @extend %gray-border;
-      display: inline-block;
-      position: absolute;
-      padding: 6rem;
-      height: 33rem;
-      width: 43rem;
-      z-index: 100;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
-
-      h1 {
-        font-size: 3.8rem;
-        line-height: 5rem;
-      }
+    img {
+      object-fit: cover;
+      object-position: top;
     }
   }
 
-  .content {
+  .titleContainer {
     @extend %gray-border;
-    padding: 3rem;
-    width: 80%;
-    margin: 5rem auto;
-    min-height: 20rem;
+    display: inline-block;
+    position: absolute;
+    padding: 6rem;
+    height: 33rem;
+    width: 43rem;
+    z-index: 100;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.1);
 
-    p {
-      font-size: 1.8rem;
-      font-weight: 500;
+    h1 {
+      font-size: 3.8rem;
+      line-height: 5rem;
     }
+  }
+}
+
+.content {
+  @extend %gray-border;
+  padding: 3rem;
+  width: 80%;
+  margin: 5rem auto;
+  min-height: 20rem;
+
+  p {
+    font-size: 1.8rem;
+    font-weight: 500;
   }
 }

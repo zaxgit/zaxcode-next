@@ -4,12 +4,15 @@ import { useState, useEffect } from 'react';
 import Nav from '@/components/layout/nav/nav';
 import BlogList from '@/components/projects/blogList';
 import Footer from '@/components/layout/footer/footer';
+import PageContentWrapper from '@/components/layout/pageContentWrapper/pageContentWrapper';
 
 export default function Blog({ posts }) {
   return (
     <>
       <Nav />
-      <BlogList title='blog' posts={posts} />
+      <PageContentWrapper>
+        <BlogList title='blog' posts={posts} />
+      </PageContentWrapper>
       <Footer />
     </>
   );
