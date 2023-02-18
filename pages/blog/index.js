@@ -9,7 +9,7 @@ export default function Blog({ posts }) {
   return (
     <>
       <Nav />
-      <BlogList posts={posts} />
+      <BlogList title='blog' posts={posts} />
       <Footer />
     </>
   );

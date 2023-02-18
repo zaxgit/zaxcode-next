@@ -8,7 +8,7 @@ export default function Projects({ projects }) {
   return (
     <>
       <Nav />
-      <ProjectsList projects={projects} />
+      <ProjectsList title='projects' projects={projects} />
       <Footer />
     </>
   );
