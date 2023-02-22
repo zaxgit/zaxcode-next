@@ -1,20 +1,22 @@
 import { api } from '../api/_api';
 
-import { useState, useEffect } from 'react';
-import Nav from '@/components/layout/nav/nav';
+import PageWrapper from '@/components/layout/pageWrapper/pageWrapper';
 import BlogList from '@/components/projects/blogList';
-import Footer from '@/components/layout/footer/footer';
-import PageContentWrapper from '@/components/layout/pageContentWrapper/pageContentWrapper';
 
 export default function Blog({ posts }) {
+  if (Array.isArray(projects) && projects.length > 0) {
+    return (
+      <PageWrapper>
+        <BlogList title='posts' posts={posts} />
+      </PageWrapper>
+    );
+  }
+
   return (
-    <>
-      <Nav />
-      <PageContentWrapper>
-        <BlogList title='blog' posts={posts} />
-      </PageContentWrapper>
-      <Footer />
-    </>
+    <PageWrapper>
+      <h1>Error</h1>
+      <p>No posts found</p>
+    </PageWrapper>
   );
 }
 

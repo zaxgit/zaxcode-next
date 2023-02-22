@@ -1,19 +1,22 @@
 import { api } from '../api/_api';
 
-import Nav from '@/components/layout/nav/nav';
+import PageWrapper from '@/components/layout/pageWrapper/pageWrapper';
 import ProjectsList from '@/components/projects/projectsList';
-import Footer from '@/components/layout/footer/footer';
-import PageContentWrapper from '@/components/layout/pageContentWrapper/pageContentWrapper';
 
 export default function Projects({ projects }) {
-  return (
-    <>
-      <Nav />
-      <PageContentWrapper>
+  if (Array.isArray(projects) && projects.length > 0) {
+    return (
+      <PageWrapper>
         <ProjectsList title='projects' projects={projects} />
-      </PageContentWrapper>
-      <Footer />
-    </>
+      </PageWrapper>
+    );
+  }
+
+  return (
+    <PageWrapper>
+      <h1>Error</h1>
+      <p>No projects found</p>
+    </PageWrapper>
   );
 }
 

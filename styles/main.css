@@ -4,7 +4,6 @@ html {
   padding: 0px;
   box-sizing: border-box;
   font-size: 62.5%;
-  transition: all 0.15s ease-in;
 }
 * body,
 html body {
