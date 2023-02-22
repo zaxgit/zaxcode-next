@@ -20,10 +20,17 @@
     min-height: 5rem;
   }
 
-  .postLink {
+  .cardActions {
+    width: 83%;
     position: absolute;
-    font-size: 1.2rem;
-    font-weight: 500;
     bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .postLink {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
   }
 }

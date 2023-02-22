@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../buttons/button';
 import { IconArrDotLeft } from '../icons/icons';
+import LikeButton from '../buttons/likeButton';
 
 export default function ProjectCard({ project }) {
   return (
@@ -29,12 +30,15 @@ export default function ProjectCard({ project }) {
             }
           })}
         </div>
-        <Link href={`/projects/${project.slug}`}>
-          <Button isPrimary={false} className='secondary-button-colors'>
-            read more
-            <IconArrDotLeft />
-          </Button>
-        </Link>
+        <div className={styles.cardActions}>
+          <Link href={`/projects/${project.slug}`}>
+            <Button isPrimary={false} className='secondary-button-colors'>
+              read more
+              <IconArrDotLeft />
+            </Button>
+          </Link>
+          <LikeButton postId={project.uuid} />
+        </div>
       </div>
     </div>
   );
