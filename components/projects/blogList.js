@@ -16,7 +16,7 @@ export default function BlogList({ title, posts, hasButton }) {
           })}
         </div>
         {hasButton && (
-          <Link href='/blog'>
+          <Link href='/blog' className={styles.float}>
             <Button className='primary-button-colors' isPrimary={true}>
               View More
               <HiOutlineDocumentText />

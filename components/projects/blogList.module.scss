@@ -1,9 +1,16 @@
+.float {
+  float: right;
+}
+
 .listWrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 5rem;
   margin-bottom: 5rem;
   row-gap: 5rem;
+  a {
+    float: right;
+  }
 }
 
 @media (max-width: 992px) {
