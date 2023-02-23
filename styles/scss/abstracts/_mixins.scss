@@ -16,8 +16,4 @@
   &:not(:last-child) {
     margin-right: 1.5rem;
   }
-
-  &:active:hover {
-    border-bottom: 1px solid black;
-  }
 }

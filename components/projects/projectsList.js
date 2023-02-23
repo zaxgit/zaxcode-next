@@ -16,7 +16,7 @@ export default function ProjectsList({ title, projects, hasButton }) {
           })}
         </div>
         {hasButton && (
-          <Link href='/projects' class={styles.float}>
+          <Link href='/projects' className={styles.float}>
             <Button className='primary-button-colors' isPrimary={true}>
               View More
               <HiOutlineDocumentText />
