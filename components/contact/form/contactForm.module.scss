@@ -1,4 +1,19 @@
+@import '../../../styles/scss/abstracts/variables';
 @import '../../../styles/scss/abstracts/mixins';
+
+.statusContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .status {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+}
+
 .contactForm {
   position: absolute;
   top: 50%;
@@ -6,65 +21,99 @@
   width: 100%;
 
   .inputContainer {
-    input {
-      @extend %gray-border;
-      position: relative;
-      display: block;
-      width: 100%;
-      border-radius: 12px;
-      height: 5rem;
-      padding: 1rem;
+    .control {
       margin-bottom: 4rem;
-      font-size: 2.1rem;
-      font-weight: 500;
-      transition: all 0.3s ease-in-out;
 
-      &::placeholder {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 2.1rem;
-        transition: all 0.3s ease-out;
+      p {
+        margin-top: 1rem;
+        margin-left: 1.2rem;
+        margin-right: 0;
+        margin-bottom: 0;
+        font-size: 1.3rem;
       }
+      input {
+        @extend %gray-border;
+        position: relative;
+        display: block;
+        width: 100%;
+        border-radius: 12px;
+        height: 5rem;
+        padding: 1rem;
+        font-size: 2.1rem;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
 
-      &:focus {
-        height: 6rem;
         &::placeholder {
-          transform: translateY(-100px);
-          color: transparent;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 2.1rem;
+          transition: all 0.3s ease-out;
+        }
+
+        &:focus {
+          height: 6rem;
+          &::placeholder {
+            transform: translateY(-100px);
+            color: transparent;
+          }
+        }
+
+        &.error {
+          border-color: $color-error;
+
+          &:focus {
+            border-color: $color-error;
+            outline-color: $color-error;
+          }
+
+          &::placeholder {
+            color: $color-error;
+          }
         }
       }
-    }
+      textarea {
+        height: 6rem;
+        width: 100%;
+        resize: none;
 
-    textarea {
-      height: 6rem;
-      width: 100%;
-      resize: none;
-
-      position: relative;
-      display: block;
-      border: 1px solid #cbcbcb;
-      border-radius: 12px;
-      height: 5rem;
-      padding: 1rem;
-      margin-bottom: 5rem;
-      font-size: 2.1rem;
-      font-weight: 500;
-      transition: all 0.3s ease-in-out;
-
-      &::placeholder {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        position: relative;
+        display: block;
+        border: 1px solid #cbcbcb;
+        border-radius: 12px;
+        height: 5rem;
+        padding: 1rem;
         font-size: 2.1rem;
-        transition: all 0.3s ease-out;
-      }
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
 
-      &:focus {
-        height: 13rem;
         &::placeholder {
-          transform: translateY(-100px);
-          color: transparent;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 2.1rem;
+          transition: all 0.3s ease-out;
+        }
+
+        &:focus {
+          height: 13rem;
+          &::placeholder {
+            transform: translateY(-100px);
+            color: transparent;
+          }
+        }
+
+        &.error {
+          border-color: $color-error;
+
+          &:focus {
+            border-color: $color-error;
+            outline-color: $color-error;
+          }
+
+          &::placeholder {
+            color: $color-error;
+          }
         }
       }
     }

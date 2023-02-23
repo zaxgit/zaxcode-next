@@ -4,7 +4,7 @@ import PageWrapper from '@/components/layout/pageWrapper/pageWrapper';
 import BlogList from '@/components/projects/blogList';
 
 export default function Blog({ posts }) {
-  if (Array.isArray(projects) && projects.length > 0) {
+  if (Array.isArray(posts) && posts.length > 0) {
     return (
       <PageWrapper>
         <BlogList title='posts' posts={posts} />

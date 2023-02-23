@@ -5,6 +5,7 @@ export default function Button({
   className,
   isPrimary,
   type,
+  disabled,
   onClick,
 }) {
   const buttonType = isPrimary ? 'primary' : 'secondary';
@@ -13,6 +14,7 @@ export default function Button({
       className={`${styles.btn} ${className} ${styles[buttonType]}`}
       type={type}
       onClick={onClick}
+      disabled={disabled}
     >
       {children}
     </button>
