@@ -18,7 +18,7 @@ export default function ContactForm() {
   if (state.submitting) {
     return (
       <div className={styles.statusContainer}>
-        <p className={styles.status}>Loading...</p>;
+        <p className={`${styles.status} text-dark`}>Loading...</p>;
       </div>
     );
   }
@@ -26,14 +26,15 @@ export default function ContactForm() {
   if (state.succeeded) {
     return (
       <div className={styles.statusContainer}>
-        <p className={styles.status}>Thanks for your message!</p>;
+        <p className={`${styles.status} text-dark`}>Thanks for your message!</p>
+        ;
       </div>
     );
   }
 
   return (
     <form
-      onSubmit={handleSubmit(handleFormspree)}
+      onSubmit={handleSubmit(() => {})}
       className={styles.contactForm}
       noValidate
     >
