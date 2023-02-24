@@ -18,7 +18,8 @@ export default function ProjectPage({ post, relatedPosts }) {
               <Image
                 src={post.feature_image}
                 fill
-                sizes={['802', '401', '200']}
+                sizes='60vw'
+                priority
                 alt='project image'
               />
             )}

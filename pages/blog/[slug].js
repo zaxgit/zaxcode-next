@@ -13,13 +13,14 @@ export default function PostPage({ post }) {
             <Image
               src={post.feature_image}
               fill
-              sizes={['802', '401', '200']}
+              sizes='60vw'
+              priority
               alt='project image'
             />
           )}
         </div>
         <div className='titleContainer background'>
-          <IconPost className='text-dark' height='5.8rem' width='7.5rem' />
+          <IconPost className='text-dark' height='6rem' width='5.8rem' />
           <h1 className='text-color'>{post.title}</h1>
         </div>
       </div>

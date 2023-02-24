@@ -89,14 +89,15 @@ html body a {
 }
 .hero .imgWrapper img {
   object-fit: cover;
-  object-position: top;
+  object-position: top left;
 }
 .hero .titleContainer {
   display: inline-block;
   position: absolute;
   padding: 6rem;
-  height: 33rem;
-  width: 43rem;
+  height: 85%;
+  max-height: 33rem;
+  max-width: 43rem;
   z-index: 100;
   right: 10px;
   top: 50%;
@@ -106,6 +107,7 @@ html body a {
 .hero .titleContainer h1 {
   font-size: 3.8rem;
   line-height: 5rem;
+  max-width: 80%;
 }
 
 .content {
@@ -119,6 +121,47 @@ html body a {
   font-weight: 500;
 }
 
+@media (max-width: 900px) {
+  .hero {
+    width: 90%;
+  }
+  .hero .imgWrapper {
+    margin-left: 0;
+  }
+  .hero .titleContainer {
+    right: 0px;
+    opacity: 0.9;
+  }
+  .hero .titleContainer h1 {
+    max-width: 100%;
+  }
+  .content {
+    width: 90%;
+  }
+}
+@media (max-width: 730px) {
+  .hero {
+    height: 300px;
+  }
+  .hero .imgWrapper {
+    margin-left: 0;
+    width: 80%;
+  }
+  .hero .titleContainer {
+    right: 0px;
+    padding: 3rem;
+    min-width: 60%;
+  }
+}
+@media (max-width: 600px) {
+  .hero .imgWrapper {
+    width: 100%;
+  }
+  .hero .titleContainer {
+    padding: 2rem;
+    min-width: 100%;
+  }
+}
 body .color-primary {
   color: #ff5656;
 }

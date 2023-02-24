@@ -11,7 +11,14 @@ export default function About({ author, scrollToRef }) {
     <Wrapper>
       <div className={styles.aboutGrid}>
         <div className={styles.aboutImage}>
-          <Image src={author.profile_image} alt='Image of Zach' fill priority />
+          <Image
+            src={author.profile_image}
+            alt='Image of Zach'
+            fill
+            sizes='(max-width: 815px) 90vw,
+              45vw'
+            priority
+          />
         </div>
         <div className={styles.aboutContent}>
           <h1 className='text-dark'>
@@ -22,12 +29,12 @@ export default function About({ author, scrollToRef }) {
             <span className='color-primary'>
               As an enthusiastic self-taught programmer
             </span>
-            with over two years of experience, I have honed my skills through
-            various resources such as CodeCademy and Udemy. I have a passion for
-            continuously expanding my knowledge and have been consistently
-            reading technical documentation and solving challenging programming
-            problems through independent projects. I am now seeking a dynamic
-            and challenging company that can provide opportunities for
+            &space;with over two years of experience, I have honed my skills
+            through various resources such as CodeCademy and Udemy. I have a
+            passion for continuously expanding my knowledge and have been
+            consistently reading technical documentation and solving challenging
+            programming problems through independent projects. I am now seeking
+            a dynamic and challenging company that can provide opportunities for
             professional growth and where I can contribute to realizing the
             company&apos;s online initiatives.
           </p>

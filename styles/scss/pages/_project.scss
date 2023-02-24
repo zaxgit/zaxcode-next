@@ -22,7 +22,7 @@
 
     img {
       object-fit: cover;
-      object-position: top;
+      object-position: top left;
     }
   }
 
@@ -31,8 +31,9 @@
     display: inline-block;
     position: absolute;
     padding: 6rem;
-    height: 33rem;
-    width: 43rem;
+    height: 85%;
+    max-height: 33rem;
+    max-width: 43rem;
     z-index: 100;
     right: 10px;
     top: 50%;
@@ -42,6 +43,7 @@
     h1 {
       font-size: 3.8rem;
       line-height: 5rem;
+      max-width: 80%;
     }
   }
 }
@@ -56,5 +58,56 @@
   p {
     font-size: 1.8rem;
     font-weight: 500;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    width: 90%;
+
+    .imgWrapper {
+      margin-left: 0;
+    }
+
+    .titleContainer {
+      right: 0px;
+      opacity: 0.9;
+
+      h1 {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .content {
+    width: 90%;
+  }
+}
+@media (max-width: 730px) {
+  .hero {
+    height: 300px;
+    .imgWrapper {
+      margin-left: 0;
+      width: 80%;
+    }
+
+    .titleContainer {
+      right: 0px;
+      padding: 3rem;
+      min-width: 60%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    .imgWrapper {
+      width: 100%;
+    }
+
+    .titleContainer {
+      padding: 2rem;
+      min-width: 100%;
+    }
   }
 }
