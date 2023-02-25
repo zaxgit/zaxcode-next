@@ -16,7 +16,7 @@ export default function LikeButton({ postId }) {
     } else {
       return;
     }
-  }, []);
+  }, [postId]);
 
   useEffect(() => {
     if (isLiked) {
@@ -24,7 +24,7 @@ export default function LikeButton({ postId }) {
     } else {
       localStorage.setItem(postId, 'false');
     }
-  }, [isLiked]);
+  }, [isLiked, postId]);
 
   const toggleLiked = () => {
     setIsLiked(!isLiked);
