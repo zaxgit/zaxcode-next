@@ -3,11 +3,16 @@ import { api } from '../api/_api';
 import PageWrapper from '@/components/layout/pageWrapper/pageWrapper';
 import ProjectsList from '@/components/projects/projectsList';
 
-export default function Projects({ projects }) {
+export default function Projects({ projects, tags }) {
   if (Array.isArray(projects) && projects.length > 0) {
     return (
       <PageWrapper>
-        <ProjectsList title='projects' projects={projects} />
+        <ProjectsList
+          title='projects'
+          projects={projects}
+          tags={tags}
+          hasDropdown
+        />
       </PageWrapper>
     );
   }
@@ -33,11 +38,25 @@ export async function getStaticProps() {
     include: 'tags',
   });
 
+  const tags = await api.tags.browse().then((data) => {
+    const unwantedTags = [
+      'Development-Process',
+      'Projects',
+      'Amber-Derousse',
+      'ZaxCode-Next',
+      'ZaxCode-Original',
+      'Biblioteca',
+      'Rewards',
+    ];
+
+    return data.filter((d) => !unwantedTags.includes(d.name));
+  });
   // By returning { props: { posts } }, the Blog component
   // will receive `posts` as a prop at build time
   return {
     props: {
       projects,
+      tags,
     },
   };
 }

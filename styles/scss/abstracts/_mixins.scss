@@ -17,3 +17,11 @@
     margin-right: 1.5rem;
   }
 }
+
+%clear-fix {
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}

@@ -6,7 +6,7 @@ import { MdWorkOutline } from 'react-icons/md';
 
 export default function Resume({ scrollRef }) {
   return (
-    <Wrapper>
+    <section>
       <h2 className='text-dark' ref={scrollRef}>
         resume
       </h2>
@@ -158,6 +158,6 @@ export default function Resume({ scrollRef }) {
           </div>
         </div>
       </div>
-    </Wrapper>
+    </section>
   );
 }

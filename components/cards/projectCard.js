@@ -2,7 +2,7 @@ import styles from './projectCard.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../buttons/button';
-import { IconArrDotLeft } from '../icons/icons';
+import { IconArrDotRight } from '../icons/icons';
 import LikeButton from '../buttons/likeButton';
 
 export default function ProjectCard({ project }) {
@@ -39,9 +39,9 @@ export default function ProjectCard({ project }) {
         </div>
         <div className={styles.cardActions}>
           <Link href={`/projects/${project.slug}`}>
-            <Button isPrimary={false} className='secondary-button-colors'>
+            <Button isPrimary={false}>
               read more
-              <IconArrDotLeft />
+              <IconArrDotRight />
             </Button>
           </Link>
           <LikeButton postId={project.uuid} />

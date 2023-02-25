@@ -1,24 +1,9 @@
+@import '../../styles/scss/abstracts/mixins';
+
 .wrapper {
-  width: 80%;
+  @extend %clear-fix;
+  width: 100%;
   margin: auto;
   padding-top: 5rem;
   padding-bottom: 5rem;
-
-  &::after {
-    content: '';
-    clear: both;
-    display: table;
-  }
-}
-
-@media (max-width: 992px) {
-  .wrapper {
-    width: 90%;
-  }
-}
-
-@media (max-width: 415px) {
-  .wrapper {
-    width: 95%;
-  }
 }

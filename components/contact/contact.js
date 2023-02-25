@@ -4,12 +4,11 @@ import Wrapper from '../layout/wrapper';
 import ContactForm from './form/contactForm';
 import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai';
 import Button from '../buttons/button';
-import Image from 'next/image';
-import { IconArrDotLeft } from '../icons/icons';
+import { IconArrDotRight } from '../icons/icons';
 
 export default function Contact() {
   return (
-    <Wrapper>
+    <section>
       <h2 className='text-dark'>contact</h2>
       <div className={styles.contactGrid}>
         <div className={`${styles.contactCol} ${styles.rowTop}`}>
@@ -22,9 +21,9 @@ export default function Contact() {
                 rel='noreferrer'
                 target='_blank'
               >
-                <Button className='secondary-button-colors' isPrimary={false}>
+                <Button isPrimary={false}>
                   with me
-                  <IconArrDotLeft />
+                  <IconArrDotRight />
                 </Button>
               </a>
             </div>
@@ -38,9 +37,9 @@ export default function Contact() {
                 rel='noreferrer'
                 target='_blank'
               >
-                <Button className='secondary-button-colors' isPrimary={false}>
+                <Button isPrimary={false}>
                   with me
-                  <IconArrDotLeft />
+                  <IconArrDotRight />
                 </Button>
               </a>
             </div>
@@ -50,6 +49,6 @@ export default function Contact() {
           <ContactForm />
         </div>
       </div>
-    </Wrapper>
+    </section>
   );
 }

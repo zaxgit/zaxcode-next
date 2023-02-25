@@ -70,7 +70,6 @@ export async function getStaticProps({ params }) {
     formats: 'plaintext',
   });
 
-  console.log(post);
   return {
     props: {
       post,

@@ -7,14 +7,18 @@ export default function Button({
   type,
   disabled,
   onClick,
+  value,
 }) {
   const buttonType = isPrimary ? 'primary' : 'secondary';
   return (
     <button
-      className={`${styles.btn} ${className} ${styles[buttonType]}`}
+      className={`${styles.btn} ${className} ${styles[buttonType]} ${
+        isPrimary ? 'primary-button-colors' : 'secondary-button-colors'
+      }`}
       type={type}
       onClick={onClick}
       disabled={disabled}
+      value={value}
     >
       {children}
     </button>

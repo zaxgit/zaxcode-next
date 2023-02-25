@@ -1,3 +1,5 @@
+@import '../abstracts/mixins';
+
 *,
 html {
   margin: 0px;
@@ -8,6 +10,17 @@ html {
   body {
     margin: 0;
     padding: 0;
+
+    section {
+      @extend %clear-fix;
+      padding: 3rem 0;
+    }
+
+    @media (max-width: 992px) {
+      section {
+        padding: 1.5rem 0;
+      }
+    }
 
     ul,
     li {

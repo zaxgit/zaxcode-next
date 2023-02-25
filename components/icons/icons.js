@@ -1,10 +1,10 @@
-export const IconArrDotLeft = ({ width = 14, height = 8, className }) => {
+export const IconArrDotRight = ({ width = 14, height = 8, className }) => {
   return (
     <svg
       className={className}
       width={width}
       height={height}
-      fil='inherit'
+      fill='currentColor'
       viewBox='0 0 24 12'
       xmlns='http://www.w3.org/2000/svg'
     >
@@ -16,13 +16,13 @@ export const IconArrDotLeft = ({ width = 14, height = 8, className }) => {
     </svg>
   );
 };
-export const IconArrDotDown = ({ width = 8, height = 14, className }) => {
+export const IconArrDotDown = ({ width = 8, height = 15, className }) => {
   return (
     <svg
       className={className}
       width={width}
       height={height}
-      fill='inherit'
+      fill='currentColor'
       viewBox='0 0 8 17'
       xmlns='http://www.w3.org/2000/svg'
     >

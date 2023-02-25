@@ -1,19 +1,42 @@
 import styles from './blogList.module.scss';
-import Wrapper from '../layout/wrapper';
+
+import { useState } from 'react';
+
+import Dropdown from '../dropdown/dropdown';
 import BlogCard from '../cards/blogCard';
 import Button from '../buttons/button';
 import Link from 'next/link';
+
 import { HiOutlineDocumentText } from 'react-icons/hi';
 
-export default function BlogList({ title, posts, hasButton }) {
+export default function BlogList({
+  title,
+  posts,
+  tags,
+  hasButton,
+  hasDropdown,
+}) {
+  const [filter, setFilter] = useState('All');
+
   if (Array.isArray(posts) && posts.length > 0) {
     return (
-      <Wrapper>
-        <h2 className='text-dark'>{title}</h2>
+      <section>
+        <div className={styles.listHeader}>
+          <h2 className='text-dark'>{title}</h2>
+          {hasDropdown && (
+            <Dropdown tags={tags} filter={filter} setFilter={setFilter} />
+          )}
+        </div>
         <div className={styles.listWrapper}>
-          {posts.map((post) => {
-            return <BlogCard key={post.uuid} post={post} />;
-          })}
+          {!filter || filter === 'All'
+            ? posts.map((post) => {
+                return <BlogCard key={post.uuid} post={post} />;
+              })
+            : posts
+                .filter((post) => post.tags.some((tag) => tag.name === filter))
+                .map((post) => {
+                  return <BlogCard key={post.uuid} post={post} />;
+                })}
         </div>
         {hasButton && (
           <Link href='/blog' className={styles.float}>
@@ -23,13 +46,13 @@ export default function BlogList({ title, posts, hasButton }) {
             </Button>
           </Link>
         )}
-      </Wrapper>
+      </section>
     );
   }
   return (
-    <Wrapper>
+    <section>
       <h2 className='text-dark'>Error</h2>
       <p className='text-dark'>No Posts found</p>
-    </Wrapper>
+    </section>
   );
 }

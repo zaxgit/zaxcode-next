@@ -90,11 +90,12 @@
     grid-template-columns: 3fr;
     grid-template-rows: repeat(2, 3fr);
 
-    row-gap: 1.5rem;
+    row-gap: 4rem;
 
     .aboutImage {
       width: 100%;
       margin: 0 auto;
+      padding: 0;
     }
 
     .aboutContent {

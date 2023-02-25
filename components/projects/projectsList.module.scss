@@ -2,6 +2,15 @@
   float: right;
 }
 
+.listHeader {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    margin: 0;
+    display: inline-block;
+  }
+}
 .listWrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
