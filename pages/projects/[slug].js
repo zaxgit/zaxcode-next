@@ -13,6 +13,10 @@ export default function ProjectPage({ post, relatedPosts }) {
     <PageWrapper>
       <div className='projectWrapper'>
         <div className='hero'>
+          <div className='titleContainer background'>
+            <IconCode className='text-dark' height='5.8rem' width='7.5rem' />
+            <h1 className='text-color'>{post.title}</h1>
+          </div>
           <div className='imgWrapper'>
             {post.feature_image && (
               <Image
@@ -23,10 +27,6 @@ export default function ProjectPage({ post, relatedPosts }) {
                 alt='project image'
               />
             )}
-          </div>
-          <div className='titleContainer background'>
-            <IconCode className='text-dark' height='5.8rem' width='7.5rem' />
-            <h1 className='text-color'>{post.title}</h1>
           </div>
         </div>
         <div className='content'>

@@ -23,12 +23,12 @@ html body {
 }
 * body section,
 html body section {
-  padding: 3rem 0;
+  padding-bottom: 6rem;
 }
 @media (max-width: 992px) {
   * body section,
   html body section {
-    padding: 1.5rem 0;
+    padding-bottom: 3rem 0;
   }
 }
 * body ul,
@@ -58,7 +58,7 @@ html body h6 {
 * body h2,
 html body h2 {
   font-size: 2.4rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 * body h4,
 html body h4 {
@@ -157,7 +157,6 @@ html body a {
   }
   .hero .titleContainer {
     right: 0px;
-    opacity: 0.9;
   }
   .hero .titleContainer h1 {
     max-width: 100%;
@@ -166,27 +165,24 @@ html body a {
     width: 90%;
   }
 }
-@media (max-width: 730px) {
+@media (max-width: 800px) {
   .hero {
-    height: 300px;
+    height: 100%;
   }
   .hero .imgWrapper {
-    margin-left: 0;
-    width: 80%;
-  }
-  .hero .titleContainer {
-    right: 0px;
-    padding: 3rem;
-    min-width: 60%;
-  }
-}
-@media (max-width: 600px) {
-  .hero .imgWrapper {
+    display: block;
     width: 100%;
+    height: 250px;
   }
   .hero .titleContainer {
-    padding: 2rem;
-    min-width: 100%;
+    position: static;
+    display: block;
+    max-width: 100%;
+    right: 0px;
+    top: 0px;
+    transform: none;
+    margin-bottom: 2rem;
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.1);
   }
 }
 body .color-primary {
