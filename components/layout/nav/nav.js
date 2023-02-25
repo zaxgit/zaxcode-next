@@ -11,16 +11,19 @@ export default function Nav() {
   return (
     <div className={styles.navContainer}>
       <div className={styles.navInner}>
-        <div className={`${styles.brand}`}>
+        <Link href='/' className={styles.brand}>
           <Image src='/Z..svg' height={30} width={35} alt='ZaxCode Logo' />
           <h3 className={`${styles.navTitle} text-dark`}>
             zax<span className='color-primary'>Code</span>
           </h3>
-        </div>
+        </Link>
 
         <nav className={styles.nav}>
           {isBreakpoint ? (
-            <Hamburger />
+            <>
+              <Hamburger />
+              <ThemeToggler />
+            </>
           ) : (
             <>
               <ul className='text-dark'>

@@ -1,5 +1,4 @@
 import styles from './about.module.scss';
-import Wrapper from '../layout/wrapper';
 import Image from 'next/image';
 import Button from '../buttons/button';
 import { HiOutlineDocumentDownload } from 'react-icons/hi';
