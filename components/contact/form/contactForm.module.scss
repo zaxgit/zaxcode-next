@@ -35,8 +35,9 @@
 
       label {
         position: absolute;
+        width: 100px;
         top: 50%;
-        left: 2rem;
+        left: 11px;
         transform: translateY(-50%);
         font-size: 2.1rem;
         transition: transform 0.3s ease-in;
@@ -45,17 +46,17 @@
 
       input:not(:placeholder-shown) ~ label,
       textarea:not(:placeholder-shown) ~ label {
-        transform: translate(-15px, -55px);
+        transform: translate(-20px, -55px) scale(75%);
       }
 
       &:focus-within {
         input ~ label,
         input:not(:placeholder-shown) ~ label {
-          transform: translate(-15px, -60px);
+          transform: translate(-20px, -60px) scale(75%);
         }
         textarea ~ label,
         textarea:not(:placeholder-shown) ~ label {
-          transform: translate(-15px, -95px);
+          transform: translate(-20px, -95px) scale(75%);
         }
       }
 
@@ -66,12 +67,12 @@
           input ~ label,
           input:not(:placeholder-shown) ~ label {
             color: $color-error;
-            transform: translate(-15px, -75px);
+            transform: translate(-20px, -75px) scale(75%);
           }
           textarea ~ label,
           textarea:not(:placeholder-shown) ~ label {
             color: $color-error;
-            transform: translate(-15px, -110px);
+            transform: translate(-20px, -110px) scale(75%);
           }
 
           input,
@@ -98,7 +99,7 @@
 
         input:not(:placeholder-shown) ~ label,
         textarea:not(:placeholder-shown) ~ label {
-          transform: translate(-15px, -70px);
+          transform: translate(-20px, -70px) scale(75%);
         }
       }
 
