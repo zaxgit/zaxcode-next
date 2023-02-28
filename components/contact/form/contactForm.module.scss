@@ -63,11 +63,13 @@
         border-color: $color-error;
 
         &:focus-within {
-          label {
+          input ~ label,
+          input:not(:placeholder-shown) ~ label {
             color: $color-error;
             transform: translate(-15px, -75px);
           }
-          textarea ~ label {
+          textarea ~ label,
+          textarea:not(:placeholder-shown) ~ label {
             color: $color-error;
             transform: translate(-15px, -110px);
           }
@@ -92,6 +94,11 @@
         label {
           color: $color-error;
           transform: translate(0, -100%);
+        }
+
+        input:not(:placeholder-shown) ~ label,
+        textarea:not(:placeholder-shown) ~ label {
+          transform: translate(-15px, -70px);
         }
       }
 
