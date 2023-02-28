@@ -22,6 +22,7 @@
 
   .inputContainer {
     .control {
+      position: relative;
       margin-bottom: 4rem;
 
       p {
@@ -31,6 +32,69 @@
         margin-bottom: 0;
         font-size: 1.3rem;
       }
+
+      label {
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        transform: translateY(-50%);
+        font-size: 2.1rem;
+        transition: transform 0.3s ease-in;
+        z-index: 100;
+      }
+
+      input:not(:placeholder-shown) ~ label,
+      textarea:not(:placeholder-shown) ~ label {
+        transform: translate(-15px, -55px);
+      }
+
+      &:focus-within {
+        input ~ label,
+        input:not(:placeholder-shown) ~ label {
+          transform: translate(-15px, -60px);
+        }
+        textarea ~ label,
+        textarea:not(:placeholder-shown) ~ label {
+          transform: translate(-15px, -95px);
+        }
+      }
+
+      &.error {
+        border-color: $color-error;
+
+        &:focus-within {
+          label {
+            color: $color-error;
+            transform: translate(-15px, -75px);
+          }
+          textarea ~ label {
+            color: $color-error;
+            transform: translate(-15px, -110px);
+          }
+
+          input,
+          textarea {
+            border-color: $color-error;
+            outline-color: $color-error;
+            &:focus-visible,
+            :focus {
+              border-color: $color-error;
+              outline: $color-error;
+            }
+          }
+        }
+
+        input,
+        textarea {
+          border-color: $color-error;
+          outline-color: $color-error;
+        }
+        label {
+          color: $color-error;
+          transform: translate(0, -100%);
+        }
+      }
+
       input {
         @extend %gray-border;
         position: relative;
@@ -43,41 +107,16 @@
         font-weight: 500;
         transition: all 0.3s ease-in-out;
 
-        &::placeholder {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          font-size: 2.1rem;
-          transition: all 0.3s ease-out;
-        }
-
         &:focus {
           height: 6rem;
-          &::placeholder {
-            transform: translateY(-100px);
-            color: transparent;
-          }
-        }
-
-        &.error {
-          border-color: $color-error;
-
-          &:focus {
-            border-color: $color-error;
-            outline-color: $color-error;
-          }
-
-          &::placeholder {
-            color: $color-error;
-          }
         }
       }
+
       textarea {
         height: 6rem;
         width: 100%;
         resize: none;
 
-        position: relative;
         display: block;
         border: 1px solid #cbcbcb;
         border-radius: 12px;
@@ -87,33 +126,8 @@
         font-weight: 500;
         transition: all 0.3s ease-in-out;
 
-        &::placeholder {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          font-size: 2.1rem;
-          transition: all 0.3s ease-out;
-        }
-
         &:focus {
           height: 13rem;
-          &::placeholder {
-            transform: translateY(-100px);
-            color: transparent;
-          }
-        }
-
-        &.error {
-          border-color: $color-error;
-
-          &:focus {
-            border-color: $color-error;
-            outline-color: $color-error;
-          }
-
-          &::placeholder {
-            color: $color-error;
-          }
         }
       }
     }

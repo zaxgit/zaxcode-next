@@ -2,10 +2,12 @@
 
 .blogCard {
   @extend %gray-border;
+  @extend %card-hover;
   position: relative;
   padding: 2rem;
   padding-top: 6rem;
   width: 100%;
+  min-height: 25rem;
 
   .postIcon {
     text-align: left;
@@ -14,7 +16,6 @@
   }
 
   .postTitle {
-    margin-bottom: 4rem;
     font-size: 1.8rem;
     font-weight: 700;
     min-height: 5rem;

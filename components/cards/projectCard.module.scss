@@ -1,7 +1,8 @@
 @import '../../styles/scss/abstracts/mixins';
 .projectCardContainer {
-  position: relative;
   @extend %gray-border;
+  @extend %card-hover;
+  position: relative;
   display: inline-block;
   min-width: 100%;
   padding: 2rem;

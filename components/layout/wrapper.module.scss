@@ -1,9 +1,0 @@
-@import '../../styles/scss/abstracts/mixins';
-
-.wrapper {
-  @extend %clear-fix;
-  width: 100%;
-  margin: auto;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}

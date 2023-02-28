@@ -4,6 +4,7 @@ import { useForm as useHookForm } from 'react-hook-form';
 import { useForm as useFormspree } from '@formspree/react';
 
 import Button from '@/components/buttons/button';
+
 import { FiSend } from 'react-icons/fi';
 
 export default function ContactForm() {
@@ -27,24 +28,23 @@ export default function ContactForm() {
     return (
       <div className={styles.statusContainer}>
         <p className={`${styles.status} text-dark`}>Thanks for your message!</p>
-        ;
       </div>
     );
   }
 
   return (
     <form
-      onSubmit={handleSubmit(() => {})}
+      onSubmit={handleSubmit(handleFormspree)}
       className={styles.contactForm}
       noValidate
     >
       <div className={styles.inputContainer}>
-        <div className={styles.control}>
+        <div className={`${styles.control} ${errors.name && styles.error}`}>
           <input
-            className={`input ${errors.name && styles.error}`}
+            className='input'
+            placeholder=' '
             type='text'
             id='name'
-            placeholder='name'
             {...register('name', {
               required: 'Name must not be blank',
               minLength: {
@@ -57,14 +57,17 @@ export default function ContactForm() {
               },
             })}
           />
+          <label className='text-color' htmlFor='name'>
+            name
+          </label>
           <p className='text-color'>{errors.name?.message}</p>
         </div>
-        <div className={styles.control}>
+        <div className={`${styles.control} ${errors.email && styles.error}`}>
           <input
-            className={`input ${errors.email && styles.error}`}
+            className='input'
+            placeholder=' '
             id='email'
             type='email'
-            placeholder='email'
             {...register('email', {
               required: 'Email must not be blank',
               pattern: {
@@ -73,15 +76,18 @@ export default function ContactForm() {
               },
             })}
           />
+          <label className='text-color' htmlFor='email'>
+            email
+          </label>
           <p className='text-color'>{errors.email?.message}</p>
         </div>
 
-        <div className={styles.control}>
+        <div className={`${styles.control} ${errors.message && styles.error}`}>
           <textarea
-            className={`textarea ${errors.message && styles.error}`}
+            className='textarea'
+            placeholder=' '
             type='textarea'
             id='message'
-            placeholder='message'
             {...register('message', {
               required: 'Message can not be blank',
               maxLength: {
@@ -90,6 +96,9 @@ export default function ContactForm() {
               },
             })}
           />
+          <label className='text-color' htmlFor='message'>
+            message
+          </label>
           <p className='text-color'>{errors.message?.message}</p>
         </div>
       </div>

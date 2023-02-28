@@ -3,7 +3,7 @@
 .hero {
   display: block;
   position: relative;
-  width: 85%;
+  width: 100%;
   height: 400px;
   margin: 0 auto;
   padding: 0;
@@ -22,7 +22,7 @@
 
     img {
       object-fit: cover;
-      object-position: top left;
+      object-position: top;
     }
   }
 
@@ -33,7 +33,7 @@
     padding: 6rem;
     height: 85%;
     max-height: 33rem;
-    max-width: 43rem;
+    width: 43rem;
     z-index: 100;
     right: 10px;
     top: 50%;
@@ -43,43 +43,34 @@
     h1 {
       font-size: 3.8rem;
       line-height: 5rem;
-      max-width: 80%;
     }
   }
 }
 
 .content {
   @extend %gray-border;
+  position: relative;
   padding: 3rem;
-  width: 80%;
+  width: 90%;
   margin: 5rem auto;
   min-height: 20rem;
 
   p {
     font-size: 1.8rem;
     font-weight: 500;
+    margin-bottom: 5rem;
   }
 }
 
 @media (max-width: 900px) {
   .hero {
-    width: 90%;
-
     .imgWrapper {
       margin-left: 0;
     }
 
     .titleContainer {
       right: 0px;
-
-      h1 {
-        max-width: 100%;
-      }
     }
-  }
-
-  .content {
-    width: 90%;
   }
 }
 @media (max-width: 800px) {
@@ -94,8 +85,7 @@
     .titleContainer {
       position: static;
       display: block;
-      // float: right;
-      max-width: 100%;
+      width: 100%;
       right: 0px;
       top: 0px;
       transform: none;

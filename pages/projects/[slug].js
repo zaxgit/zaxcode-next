@@ -1,12 +1,11 @@
 import { api } from '../api/_api';
 
-import Nav from '@/components/layout/nav/nav';
-import Footer from '@/components/layout/footer/footer';
 import BlogList from '@/components/projects/blogList';
 
 import Image from 'next/image';
 import { IconCode } from '@/components/icons/icons';
 import PageWrapper from '@/components/layout/pageWrapper/pageWrapper';
+import LikeButton from '@/components/buttons/likeButton';
 
 export default function ProjectPage({ post, relatedPosts }) {
   return (
@@ -30,6 +29,7 @@ export default function ProjectPage({ post, relatedPosts }) {
           </div>
         </div>
         <div className='content'>
+          <LikeButton postId={post.uuid} />
           <p className='text-color'>{post.plaintext}</p>
         </div>
         {relatedPosts && (

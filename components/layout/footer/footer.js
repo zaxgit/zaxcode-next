@@ -10,13 +10,10 @@ export default function Footer() {
 
         <ul className={styles.footerLinks}>
           <li>
-            <Link href='/'>Home</Link>
+            <Link href='/'>LinkedIn</Link>
           </li>
           <li>
-            <Link href='/resume'>Resume</Link>
-          </li>
-          <li>
-            <Link href='/contact'>Contact</Link>
+            <Link href='/'>GitHub</Link>
           </li>
         </ul>
       </div>

@@ -25,3 +25,13 @@
     display: table;
   }
 }
+
+%card-hover {
+  // transition: scale 0.3s ease-in;
+  transition: transform 0.15s ease-in, box-shadow 0.2s ease-in;
+
+  &:hover {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01) translateY(-1%);
+  }
+}

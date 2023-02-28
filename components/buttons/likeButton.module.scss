@@ -1,10 +1,12 @@
 .likeButton {
-  // display: inline-block;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
   background: none;
   border: none;
-  float: right;
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 0;
+
   transition: all 0.05s ease-in;
 
   &:hover {

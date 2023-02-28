@@ -1,6 +1,8 @@
 import styles from './about.module.scss';
+
 import Image from 'next/image';
 import Button from '../buttons/button';
+
 import { HiOutlineDocumentDownload } from 'react-icons/hi';
 import { FaAward, FaCode, FaCheckDouble } from 'react-icons/fa';
 import { IconArrDotDown } from '../icons/icons';

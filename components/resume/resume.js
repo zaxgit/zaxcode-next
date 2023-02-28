@@ -1,5 +1,5 @@
 import styles from './resume.module.scss';
-import Wrapper from '../layout/wrapper';
+
 import { IoSchoolOutline } from 'react-icons/io5';
 import { GiSkills } from 'react-icons/gi';
 import { MdWorkOutline } from 'react-icons/md';

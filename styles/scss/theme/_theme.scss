@@ -46,6 +46,13 @@ body {
     .primary-button-colors {
       background-color: $lt-button;
       color: $lt-button-text;
+
+      &:hover {
+        background-color: $color-primary;
+      }
+      &:active {
+        background-color: $color-primary;
+      }
     }
 
     .secondary-button-colors {
@@ -99,6 +106,14 @@ body {
     .primary-button-colors {
       background-color: $dt-button;
       color: $dt-button-text;
+
+      &:hover {
+        background-color: $color-primary;
+      }
+
+      &:active {
+        background-color: $color-primary;
+      }
     }
 
     .secondary-button-colors {

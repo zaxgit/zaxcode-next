@@ -1,9 +1,9 @@
 import styles from './contact.module.scss';
 
-import Wrapper from '../layout/wrapper';
 import ContactForm from './form/contactForm';
 import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai';
 import Button from '../buttons/button';
+
 import { IconArrDotRight } from '../icons/icons';
 
 export default function Contact() {

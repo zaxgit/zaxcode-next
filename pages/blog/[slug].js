@@ -3,11 +3,16 @@ import { api } from '../api/_api';
 import Image from 'next/image';
 import { IconPost } from '@/components/icons/icons';
 import PageWrapper from '@/components/layout/pageWrapper/pageWrapper';
+import LikeButton from '@/components/buttons/likeButton';
 
 export default function PostPage({ post }) {
   return (
     <PageWrapper>
       <div className='hero'>
+        <div className='titleContainer background'>
+          <IconPost className='text-dark' height='6rem' width='5.8rem' />
+          <h1 className='text-color'>{post.title}</h1>
+        </div>
         <div className='imgWrapper'>
           {post.feature_image && (
             <Image
@@ -19,13 +24,10 @@ export default function PostPage({ post }) {
             />
           )}
         </div>
-        <div className='titleContainer background'>
-          <IconPost className='text-dark' height='6rem' width='5.8rem' />
-          <h1 className='text-color'>{post.title}</h1>
-        </div>
       </div>
       <div className='content'>
         <p className='text-color'>{post.plaintext}</p>
+        <LikeButton postId={post.uuid} />
       </div>
     </PageWrapper>
   );
