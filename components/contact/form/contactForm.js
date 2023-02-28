@@ -94,10 +94,6 @@ export default function ContactForm() {
                 value: 500,
                 message: 'Message must be less than 500 characters long',
               },
-              minLength: {
-                value: 500,
-                message: 'Message must be more than 10 characters long',
-              },
             })}
           />
           <label className='text-color' htmlFor='message'>
