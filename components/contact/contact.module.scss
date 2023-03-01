@@ -10,8 +10,17 @@
   .contactCol {
     position: relative;
   }
+
+  a {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
   .contactCard {
     @extend %gray-border;
+    @extend %card-hover;
     width: 100%;
     border-radius: 12px;
 
@@ -19,10 +28,6 @@
     padding-bottom: 1.5rem;
 
     text-align: center;
-
-    &:not(:last-child) {
-      margin-bottom: 4rem;
-    }
 
     svg {
       font-size: 3rem;

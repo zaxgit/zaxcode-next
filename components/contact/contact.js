@@ -12,38 +12,34 @@ export default function Contact() {
       <h2 className='text-dark'>contact</h2>
       <div className={styles.contactGrid}>
         <div className={`${styles.contactCol} ${styles.rowTop}`}>
-          <div className={styles.contactCard}>
-            <AiOutlineLinkedin className='text-dark' />
-            <h4 className='text-dark'> LinkedIn</h4>
-            <div className={styles.btn}>
-              <a
-                href='//www.linkedin.com/in/zaxcode'
-                rel='noreferrer'
-                target='_blank'
-              >
+          <a
+            href='//www.linkedin.com/in/zaxcode'
+            rel='noreferrer'
+            target='_blank'
+          >
+            <div className={styles.contactCard}>
+              <AiOutlineLinkedin className='text-dark' />
+              <h4 className='text-dark'> LinkedIn</h4>
+              <div className={styles.btn}>
                 <Button isPrimary={false}>
                   with me
                   <IconArrDotRight />
                 </Button>
-              </a>
+              </div>
             </div>
-          </div>
-          <div className={styles.contactCard}>
-            <AiOutlineGithub className='text-dark' />
-            <h4 className='text-dark'>GitHub</h4>
-            <div className={styles.btn}>
-              <a
-                href='//www.github.com/zaxgit'
-                rel='noreferrer'
-                target='_blank'
-              >
+          </a>
+          <a href='//www.github.com/zaxgit' rel='noreferrer' target='_blank'>
+            <div className={styles.contactCard}>
+              <AiOutlineGithub className='text-dark' />
+              <h4 className='text-dark'>GitHub</h4>
+              <div className={styles.btn}>
                 <Button isPrimary={false}>
                   with me
                   <IconArrDotRight />
                 </Button>
-              </a>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div className={`${styles.contactCol} ${styles.rowBottom}`}>
           <ContactForm />
