@@ -18,7 +18,7 @@ export default function PostPage({ post }) {
             <Image
               src={post.feature_image}
               fill
-              sizes='60vw'
+              sizes='50vw'
               priority
               alt='project image'
             />
