@@ -99,7 +99,7 @@ export default function Resume({ scrollRef }) {
             </h4>
             <ul>
               <li>
-                <p>Developed front-ends with Next.js, React, Gatsby, HTML, CSS, and SCSS and vanilla JavaScript. Intergrated with various CMS's such as WordPress and Ghost</p>
+                <p>Developed front-ends with Next.js, React, Gatsby, HTML, CSS, and SCSS and vanilla JavaScript. Intergrated with various CMS&apos;s such as WordPress and Ghost</p>
               </li>
               <li>
                 <p>
