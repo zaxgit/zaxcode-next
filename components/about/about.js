@@ -26,7 +26,7 @@ export default function About({ author, scrollToRef }) {
           <span className='color-primary'>Walter</span>
         </h1>
         <p className={`${styles.about} text-color`}>
-          Versatile and quick-learning Data Analyst and Developer, capable of adapting to new challenges and acquiring the necessary skills to successfully complete tasks.
+        A versatile and quick-learning Data Analyst and Developer with a strong ability to adapt to new challenges and rapidly acquire the technical skills required to successfully tackle complex tasks.
         </p>
         <div className={`${styles.infoCards}`}>
           <div className={styles.infoCard}>
