@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 6rem;
+  min-height: 484px;
 
   .aboutImage {
     display: inline-block;
