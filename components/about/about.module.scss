@@ -2,7 +2,7 @@
 
 .aboutGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr max-content;
   column-gap: 6rem;
 
   .aboutImage {
@@ -14,7 +14,7 @@
     max-width: 508px;
 
     img {
-      object-fit: contain;
+      object-fit: cover;
       object-position: top;
     }
   }
