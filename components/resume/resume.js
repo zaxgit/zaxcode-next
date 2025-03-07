@@ -24,7 +24,8 @@ export default function Resume({ scrollRef }) {
                 <li className={styles.skill}>CSS 3</li>
                 <li className={styles.skill}>SASS/SCSS</li>
                 <li className={styles.skill}>JavaScript</li>
-                <li className={styles.skill}>SQL</li>
+                <li className={styles.skill}>T-SQL</li>
+                <li className={styles.skill}>PostgreSQL</li>
                 <li className={styles.skill}>Node</li>
                 <li className={styles.skill}>PHP</li>
               </ul>
@@ -58,6 +59,7 @@ export default function Resume({ scrollRef }) {
             </div>
           </div>
         </div>
+        
         <div className={`${styles.rightCol} ${styles.top}`}>
           <div className={`${styles.resumeSectionHeader} text-dark`}>
             <MdWorkOutline />
@@ -65,22 +67,47 @@ export default function Resume({ scrollRef }) {
           </div>
           <div className={`${styles.section} text-color`}>
             <h4>
-              ZaxCode
-              <span>Self Employed</span>
-              <span>2019 -</span>
+              R3 Dynamics, LLC
+              <span>Data Analyst</span>
+              <span>2023 - Current</span>
             </h4>
             <ul>
               <li>
-                <p>Write clean, readable and scalable code</p>
+                <p>Implement new technologies to automate data processes and reporting</p>      
+              </li>
+              <li>
+                <p>Conducted report building and data transformation using TSQL, PostgreSQL, Power BI, Report Builder, and Intelliget</p>
+              </li>
+              <li>
+                <p>Manage and prioritize multiple requests and projects to ensure timely and efficient delivery</p>
               </li>
               <li>
                 <p>
-                  Translate designs into user friendly, responsive websites and
-                  applications
+                Led data conversion efforts and implemented data process adaptation strategies
                 </p>
               </li>
               <li>
-                <p>Collaborate with other developers on joint projects</p>
+                <p>Collaborated with various departments internally and externally to ensure a smooth system migration</p>
+              </li>
+            </ul>
+          </div>
+          <div className={`${styles.section} text-color`}>
+            <h4>
+              ZaxCode
+              <span>Freelance Developer</span>
+              <span>2019 - Current</span>
+            </h4>
+            <ul>
+              <li>
+                <p>Developed front-ends with Next.js, React, Gatsby, HTML, CSS, and SCSS and vanilla JavaScript. Intergrated with various CMS's such as WordPress and Ghost</p>
+              </li>
+              <li>
+                <p>
+                Leveraged data from Supabase and Firebase databases
+                </p>
+              </li>
+              <li>
+                <p>Collaborated with developers and designers at Muv Ideas on website redesign implementaion campaigns</p>
               </li>
             </ul>
           </div>
@@ -88,25 +115,20 @@ export default function Resume({ scrollRef }) {
             <h4>
               STL Vapor
               <span>Sales Representative</span>
-              <span>2019 -</span>
+              <span>2019 - 2023</span>
             </h4>
             <ul>
               <li>
-                <p>Keyholder and inventory management</p>
+                <p>Managed inventory levels to ensure the store stocked adequately for sales demand</p>
               </li>
               <li>
                 <p>
-                  Collaborate on new products to carry informed by shopper input
+                Provided exceptional customer service to over 50 customers daily
                 </p>
               </li>
               <li>
                 <p>
-                  Facilitate great customer experiences for 50+ customers daily
-                </p>
-              </li>
-              <li>
-                <p>
-                  Spearheaded product listing sheet for submission to the FDA
+                Spearheaded data aggregation and creation of product listing sheet for submission to regulatory authorities
                 </p>
               </li>
             </ul>
@@ -115,28 +137,26 @@ export default function Resume({ scrollRef }) {
             <h4>
               Point Roofing and Restoration
               <span>Sales Representative</span>
-              <span>2019 -</span>
+              <span>2018 - 2019</span>
             </h4>
 
             <ul>
               <li>
                 <p>
-                  Brought in over a million dollars in sales through cold
-                  calling, previous customer referrals and leads
+                Generated over a million dollars in business through cold calling, previous customer referrals, and leads
                 </p>
               </li>
               <li>
-                <p>Determine cause and scale of property damage</p>
+                <p>Utilized attention to detail during home inspections to determine the cause and extent of property damage</p>
               </li>
               <li>
                 <p>
-                  Facilitate communication between customer and claims adjuster
+                Scheduled and managed multiple concurrent projects
                 </p>
               </li>
               <li>
                 <p>
-                  Schedule projects and maintain connection with homeowners
-                  through the build duration
+                Demonstrated strong communication skills in interacting with various stakeholders to ensure successful project outcomes
                 </p>
               </li>
             </ul>
