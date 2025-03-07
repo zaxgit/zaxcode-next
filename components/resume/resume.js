@@ -73,21 +73,21 @@ export default function Resume({ scrollRef }) {
             </h4>
             <ul>
               <li>
-                <p>Implement new technologies to automate data processes and reporting</p>      
+                <p>Implement new technologies to automate data processes and reporting.</p>      
               </li>
               <li>
-                <p>Conducted report building and data transformation using TSQL, PostgreSQL, Power BI, Report Builder, and Intelliget</p>
+                <p>Conducted report building and data transformation using TSQL, PostgreSQL, Power BI, Report Builder, and Intelliget.</p>
               </li>
               <li>
-                <p>Manage and prioritize multiple requests and projects to ensure timely and efficient delivery</p>
+                <p>Manage and prioritize multiple requests and projects to ensure timely and efficient delivery.</p>
               </li>
               <li>
                 <p>
-                Led data conversion efforts and implemented data process adaptation strategies
+                Led data conversion efforts and implemented data process adaptation strategies.
                 </p>
               </li>
               <li>
-                <p>Collaborated with various departments internally and externally to ensure a smooth system migration</p>
+                <p>Collaborated with various departments internally and externally to ensure a smooth system migration.</p>
               </li>
             </ul>
           </div>
@@ -99,15 +99,15 @@ export default function Resume({ scrollRef }) {
             </h4>
             <ul>
               <li>
-                <p>Developed front-ends with Next.js, React, Gatsby, HTML, CSS, and SCSS and vanilla JavaScript. Intergrated with various CMS&apos;s such as WordPress and Ghost</p>
+                <p>Developed front-ends with Next.js, React, Gatsby, HTML, CSS, and SCSS and vanilla JavaScript. Intergrated with various CMS&apos;s such as WordPress and Ghost.</p>
               </li>
               <li>
                 <p>
-                Leveraged data from Supabase and Firebase databases
+                Leveraged data from Supabase and Firebase databases.
                 </p>
               </li>
               <li>
-                <p>Collaborated with developers and designers at Muv Ideas on website redesign implementaion campaigns</p>
+                <p>Collaborated with developers and designers at Muv Ideas on website redesign implementaion campaigns.</p>
               </li>
             </ul>
           </div>
@@ -119,16 +119,16 @@ export default function Resume({ scrollRef }) {
             </h4>
             <ul>
               <li>
-                <p>Managed inventory levels to ensure the store stocked adequately for sales demand</p>
+                <p>Managed inventory levels to ensure the store stocked adequately for sales demand.</p>
               </li>
               <li>
                 <p>
-                Provided exceptional customer service to over 50 customers daily
+                Provided exceptional customer service to over 50 customers daily.
                 </p>
               </li>
               <li>
                 <p>
-                Spearheaded data aggregation and creation of product listing sheet for submission to regulatory authorities
+                Spearheaded data aggregation and creation of product listing sheet for submission to regulatory authorities.
                 </p>
               </li>
             </ul>
@@ -143,20 +143,20 @@ export default function Resume({ scrollRef }) {
             <ul>
               <li>
                 <p>
-                Generated over a million dollars in business through cold calling, previous customer referrals, and leads
+                Generated over a million dollars in business through cold calling, previous customer referrals, and leads.
                 </p>
               </li>
               <li>
-                <p>Utilized attention to detail during home inspections to determine the cause and extent of property damage</p>
+                <p>Utilized attention to detail during home inspections to determine the cause and extent of property damage.</p>
               </li>
               <li>
                 <p>
-                Scheduled and managed multiple concurrent projects
+                Scheduled and managed multiple concurrent projects.
                 </p>
               </li>
               <li>
                 <p>
-                Demonstrated strong communication skills in interacting with various stakeholders to ensure successful project outcomes
+                Demonstrated strong communication skills in interacting with various stakeholders to ensure successful project outcomes.
                 </p>
               </li>
             </ul>
