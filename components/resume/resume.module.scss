@@ -75,10 +75,28 @@
       }
       padding-bottom: 0.5rem;
     }
+    ul {
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
+
+      li {
+        position: relative;
+        padding-left: 1rem;
+        margin-bottom: 0.5rem;
+
+        &::before {
+          content: '•';
+          position: absolute;
+          left: 0;
+          // top: -0.05rem;
+          font-size: 2rem;
+        }
+      }
+    }
     p {
       font-weight: 400;
       font-size: 1.6rem;
-      line-height: 25px;
+      line-height: 2.8rem;
     }
     .promotion {
       font-style: italic;
