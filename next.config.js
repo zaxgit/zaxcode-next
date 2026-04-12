@@ -2,9 +2,9 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
-    domains: [
-      'digitalpress.fra1.cdn.digitaloceanspaces.com',
-      'images.unsplash.com',
+    remotePatterns: [
+      { protocol: 'https', hostname: 'digitalpress.fra1.cdn.digitaloceanspaces.com' },
+      { protocol: 'https', hostname: 'images.unsplash.com' },
     ],
   },
 };
