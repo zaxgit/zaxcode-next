@@ -1,6 +1,7 @@
 import '../styles/main.css';
 
 import { useState, useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import { DM_Sans } from '@next/font/google';
 import { ThemeContext } from '@/context/themeContext';
@@ -41,6 +42,7 @@ export default function App({ Component, pageProps }) {
     <ThemeContext.Provider value={{ theme, updateTheme }}>
       <main className={`${dmsans.className}`}>
         <Component {...pageProps} />
+        <SpeedInsights />
       </main>
     </ThemeContext.Provider>
   );

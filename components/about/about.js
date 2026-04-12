@@ -47,8 +47,8 @@ export default function About({ author, scrollToRef }) {
         </div>
         <div className={styles.actions}>
           <a
-            href='./Zachary_Walter-Resume.pdf'
-            download='Zachary_Walter-Resume.pdf'
+            href='./Zachary_Walter_Resume.pdf'
+            download='Zachary_Walter_Resume.pdf'
           >
             <Button isPrimary={true}>
               Download cv
