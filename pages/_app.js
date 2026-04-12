@@ -3,7 +3,7 @@ import '../styles/main.css';
 import { useState, useEffect } from 'react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
-import { DM_Sans } from '@next/font/google';
+import { DM_Sans } from 'next/font/google';
 import { ThemeContext } from '@/context/themeContext';
 const dmsans = DM_Sans({ weight: ['400', '500', '700'], subsets: ['latin'] });
 
