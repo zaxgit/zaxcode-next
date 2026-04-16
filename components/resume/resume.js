@@ -22,11 +22,10 @@ function SkillGroup({ category, items }) {
 function ExperienceEntry({ title, company, dates, promotion, bullets }) {
   return (
     <div className={`${styles.section} text-color`}>
-      <h4>
-        {title}
-        <span>{company}</span>
-        <span>{dates}</span>
-      </h4>
+      <div className={styles.entryHeader}>
+        <h4>{title}</h4>
+        <p className={styles.jobMeta}>{company} &nbsp;·&nbsp; {dates}</p>
+      </div>
       {promotion && <p className={styles.promotion}>{promotion}</p>}
       <ul>
         {bullets.map((bullet, i) => (
@@ -37,15 +36,19 @@ function ExperienceEntry({ title, company, dates, promotion, bullets }) {
   );
 }
 
-function EducationEntry({ degree, school, date, honors }) {
+function EducationEntry({ degree, school, date, honors, link }) {
   return (
     <div className={`${styles.section} text-color`}>
-      <h4>
-        {school}
-        <span>{degree}</span>
-        <span>{date}</span>
-      </h4>
-      {honors && <p>{honors}</p>}
+      <div className={styles.entryHeader}>
+        <h4>{school}</h4>
+        <p className={styles.jobMeta}>{degree}{date && ` · ${date}`}</p>
+      </div>
+      {honors && <p className={styles.jobMeta}>{honors}</p>}
+      {link && (
+        <a href={link} target='_blank' rel='noopener noreferrer' className={styles.certLink}>
+          View Certificate
+        </a>
+      )}
     </div>
   );
 }
