@@ -1,9 +1,12 @@
 .toggle {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   font-size: 3rem;
   background-color: transparent;
   border: none;
   margin: 0;
   padding: 0;
   padding-left: 3rem;
+  cursor: pointer;
+  line-height: 1;
 }
