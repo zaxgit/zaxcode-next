@@ -8,7 +8,7 @@
   margin: 0 auto;
   .navInner {
     width: 85%;
-    // height: 5rem;
+    min-height: 5rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -65,8 +65,8 @@
   .navContainer {
     .navInner {
       .nav {
-        height: 3rem;
-        width: 10rem;
+        // height: 3rem;
+        // width: 10rem;
       }
     }
   }
