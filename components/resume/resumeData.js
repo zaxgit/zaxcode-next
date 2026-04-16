@@ -15,11 +15,11 @@ export const skills = [
 
 export const experience = [
   {
-    title: 'Data Analyst → Data Operations Analyst',
+    title: 'Data Analyst → Lead Business Systems Analyst',
     company: 'R3 Dynamics, LLC',
     location: 'Saint Charles, MO',
     dates: '06/2023 – Present',
-    promotion: 'Promoted to Data Operations Analyst — September 2024',
+    promotion: 'Promoted to Lead Business Systems Analyst — September 2024',
     bullets: [
       'Primary administrator of Interprose ACE, a licensed SaaS collections platform; leverages deep PostgreSQL customization to build and maintain workflows, automated jobs, and business logic.',
       'Executed a full system migration from a legacy platform to Interprose ACE, building T-SQL queries to extract, transform, and map all account, payment, contact, and workflow data to the new system\'s schema; coordinated with vendors and rebuilt critical operational workflows to ensure business continuity.',
@@ -73,5 +73,11 @@ export const education = [
     location: 'St. Louis, MO',
     date: 'Graduated 12/2016',
     honors: 'Magna Cum Laude, 3.8 GPA',
+  },
+  {
+    degree: 'React – The Complete Guide',
+    school: 'Udemy',
+    date: '10/11/22',
+    link: 'https://www.udemy.com/certificate/UC-402704d0-ac97-41fd-8309-22355de48c3d/',
   },
 ];

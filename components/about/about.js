@@ -26,7 +26,7 @@ export default function About({ author, scrollToRef }) {
           <span className='color-primary'>Walter</span>
         </h1>
         <p className={`${styles.about} text-color`}>
-        A versatile and quick-learning Data Analyst and Developer with a strong ability to adapt to new challenges and rapidly acquire the technical skills required to successfully tackle complex tasks.
+          Versatile developer and technical problem solver with a track record of stepping into complex challenges and growing quickly. Currently driving data operations, workflow automation, and client solutions at R3 Dynamics. Equally at home building React interfaces, writing SQL queries, or scripting Python data tools. Proven ability to collaborate across design, development, and client-facing teams to deliver solutions that work in the real world.
         </p>
         <div className={`${styles.infoCards}`}>
           <div className={styles.infoCard}>

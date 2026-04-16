@@ -118,12 +118,12 @@
 }
 @media (max-width: 600px) {
   .aboutGrid {
-    grid-template-rows: 0.9fr 1fr;
+    grid-template-rows: auto auto;
 
     .aboutImage {
       max-width: 100%;
       img {
-        object-position: center;
+        object-position: top;
       }
     }
   }
@@ -131,7 +131,7 @@
 
 @media (max-width: 450px) {
   .aboutGrid {
-    grid-template-rows: 0.8fr 0.7fr;
+    grid-template-rows: auto auto;
 
     .aboutImage {
       width: 100%;
