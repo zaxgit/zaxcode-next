@@ -2,7 +2,7 @@
 
 .resumeContainer {
   display: grid;
-  grid-template-columns: 0.75fr 3.5fr;
+  grid-template-columns: 0.7fr 3.5fr;
   grid-template-rows: auto auto auto;
   grid-gap: 3.3rem;
   color: #545353;
@@ -51,7 +51,7 @@
     padding-bottom: 3.5rem;
 
     .skillSectionTitle {
-      padding-bottom: 1rem;
+      padding-bottom: 1.5rem;
     }
     .skills {
       display: flex;
@@ -78,7 +78,7 @@
       align-items: baseline;
       flex-wrap: wrap;
       gap: 0.8rem;
-      padding-bottom: 0.5rem;
+      padding-bottom: 0.2rem;
     }
     h4 {
       padding-bottom: 0;
@@ -88,11 +88,11 @@
       font-weight: 500;
       letter-spacing: 0.03rem;
       opacity: 0.6;
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.3rem;
     }
     ul {
       padding-left: 1.5rem;
-      margin-top: 0.5rem;
+      margin-top: 0.2rem;
 
       li {
         position: relative;
@@ -118,7 +118,7 @@
       font-size: 1.3rem;
       font-weight: 500;
       color: $color-primary;
-      margin-top: 0.4rem;
+      margin-top: 0.3rem;
 
       &:hover {
         opacity: 0.75;
@@ -168,30 +168,18 @@
     .leftCol {
       .skillSectionGrid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 0.25rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
       }
     }
   }
 }
 
-@media (max-width: 565px) {
-  .resumeContainer {
-    .leftCol {
-      .skillSectionGrid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto;
-      }
-    }
-  }
-}
-@media (max-width: 350px) {
+@media (max-width: 480px) {
   .resumeContainer {
     .leftCol {
       .skillSectionGrid {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        column-gap: 0;
       }
     }
   }
