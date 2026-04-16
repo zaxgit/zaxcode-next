@@ -1,13 +1,11 @@
 @import '../../../styles/scss/abstracts/mixins';
 
 .icon {
-  position: absolute;
   height: 3rem;
   width: 3rem;
   color: black;
   z-index: 1000;
-  top: 0;
-  right: 0;
+  cursor: pointer;
 }
 
 .menu {

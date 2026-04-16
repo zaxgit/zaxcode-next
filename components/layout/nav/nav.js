@@ -21,8 +21,8 @@ export default function Nav() {
         <nav className={styles.nav}>
           {isBreakpoint ? (
             <>
-              <Hamburger />
               <ThemeToggler />
+              <Hamburger />
             </>
           ) : (
             <>
