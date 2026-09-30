@@ -10,10 +10,10 @@ export default function Footer() {
 
         <ul className={styles.footerLinks}>
           <li>
-            <Link href='/'>LinkedIn</Link>
+            <Link href='https://www.linkedin.com/in/zaxcode/'>LinkedIn</Link>
           </li>
           <li>
-            <Link href='/'>GitHub</Link>
+            <Link href='https://github.com/zaxgit'>GitHub</Link>
           </li>
         </ul>
       </div>
