@@ -32,7 +32,11 @@ export default function LikeButton({ postId }) {
   };
 
   return (
-    <button className={`${styles.likeButton} ${color}`} onClick={toggleLiked}>
+    <button
+      className={`${styles.likeButton} ${color}`}
+      onClick={toggleLiked}
+      aria-label='Like this post'
+    >
       <AiFillLike />
     </button>
   );
