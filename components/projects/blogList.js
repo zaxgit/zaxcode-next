@@ -39,7 +39,11 @@ export default function BlogList({
                 })}
         </div>
         {hasButton && (
-          <Link href='/blog' className={styles.float}>
+          <Link
+            href='/blog'
+            className={styles.float}
+            aria-label='View more blog posts'
+          >
             <Button className='primary-button-colors' isPrimary={true}>
               View More
               <HiOutlineDocumentText />

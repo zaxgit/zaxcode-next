@@ -41,7 +41,11 @@ export default function ProjectsList({
                 })}
         </div>
         {hasButton && (
-          <Link href='/projects' className={styles.float}>
+          <Link
+            href='/projects'
+            className={styles.float}
+            aria-label='View more projects'
+          >
             <Button className='primary-button-colors' isPrimary={true}>
               View More
               <HiOutlineDocumentText />

@@ -49,6 +49,7 @@ export default function About({ author, scrollToRef }) {
           <a
             href='./Zachary_Walter_Resume.pdf'
             download='Zachary_Walter_Resume.pdf'
+            aria-label='Download CV'
           >
             <Button isPrimary={true}>
               Download cv
